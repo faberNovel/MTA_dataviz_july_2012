@@ -11,45 +11,58 @@
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic,700italic,900italic,300italic,300' rel='stylesheet' type='text/css'>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.fabernovel.com/favicon_fabernovel.ico">
+  
+  <!--LINKS WAX-->
+  <script src='js/libs/jquery-1.7.1.min.js' type='text/javascript'></script>
+  <script src='wax/ext/modestmaps.min.js' type='text/javascript'></script>
+  <script src='wax/dist/wax.mm.js' type='text/javascript'></script>
+  <link href='wax/theme/controls.css' rel='stylesheet' type='text/css' />
+  <!---->
+  
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
   	<div id="header_wrapper">
-    	<div class="tools">
+    	<div id="title">
+    		<h1>1.6  billion  rides</h1>
         	<a href="#" class="pinterest_bt" ><img src="img/pinterest_icon.png" alt="pinterest"/></a>
          	<a href="#" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
          	<a href="#" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
-    		<form method="" >
-    			<input id="searchinputbox" type="text" value="Search" maxlength="255" size="12" alt="searchinputbox" name="">
-           	 	<!--<input id="searchbutton" type="submit" style="padding: 1px 8px;" value="go" name="">-->
+            <div style="clear:both;"></div>	
+        	<h2>A story of NYC subways, big data and YOU!</h2>
+        	<p>In 2011, New York City's subways were ridden 1,640,434,672 times, generating many billions of data points. That data is all open and available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from it? faberNovel decided to find out.
+            </p>
+            <form method="" >
+    			<input id="searchinputbox" type="text" value="What's your station ?" maxlength="255" size="12" alt="searchinputbox" name="">
+           	 	<input id="searchbutton" type="submit" style="padding: 1px 8px;" value="" name="">
+                <div style="clear:both;"></div>	
        		</form>
-        	<div style="clear:both;"></div>	
-        </div>
-    	<div id="title">
-    		<h1>1.6  billion  rides</h1>
-        	<h2>A story of public transportation, big data and YOU!</h2>
-        	<p>In 2011, New York City's subways were ridden 1,640,434,672 times, generating many billions of data points.  That data is all open and available to the public at <a href="http://mta.info/">mta.info</a></p>
-			<p>So what can we do with it?  What kinds of insights about NYC can be gleaned from it?  faberNovel decided to find out.</p>
     	</div>
     </div>
     
-    <div id="nav">
-    	<ul>
-        	<li><a href="#part1">The Borough Breakdown</a></li>
-            <li><a href="#part2">A Snapshot of New Years' Eve</a></li>
-            <li><a href="#part3">Student Riders</a></li>
-            <li><a href="#part4">Most Visited Stations</a></li>
-            <li><a href="#part5">Who Goes Where</a></li>
-            <li><a href="#part6">about</a></li>
-        </ul>
+    <div id="nav_wrapper">
+    	<div id="nav">
+        	<table>
+				<tr class="nav_bottom_border">
+					<td class="nav_left_border"><a href="#part1">The Borough Breakdown</a></td>
+					<td class="nav_left_border"><a href="#part4">Most Visited Stations</a></td>
+               		<td class="nav_left_border"><a href="#part5">Who Goes Where</a></td>
+				</tr>
+				<tr>
+           			<td class="nav_left_border"><a href="#part2">A Snapshot of New Years' Eve</a></td>
+					<td class="nav_left_border"><a href="#part3">Student Riders</a></td>
+					<td class="nav_left_border"><a href="#part6">About</a></td>
+				</tr>
+			</table>
+        </div>
     </div>
 
   </header>
   <div role="main">
-  coucou
   
   	<div id="part1" class="part">
     	<div class="picto">
@@ -57,8 +70,7 @@
         </div>
         <div class="content">
         	<h3 class="part_title">The Borough Breakdown</h3>
-            <div class="legend">How do the numbers break down between the boroughs?  Which has the most riders? 
-With the MTA data it's easy to see...</div>
+            <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
         			<li><a href="#">Annual ridership</a></li>
@@ -79,7 +91,7 @@ With the MTA data it's easy to see...</div>
         </div>
         <div class="content">
         	<h3 class="part_title">A Snapshot of New Years' Eve</h3>
-            <div class="legend">On New Year's Eve, up to one million people, start gathering in Times Square from early in the morning to the late evening to celebrate and watch the Ball drop. Could you imagine how that extra-ordinary number of people impact Times Square - 42 St and nearby subway stations?</div>
+            <div class="legend">On New Year's Eve, up to one million people, start gathering in Times Square from early in the morning to the late evening to celebrate and watch the Ball drop. Can you imagine how that extra-ordinary number of people impact Times Square - 42 St and nearby subway stations?</div>
             <iframe src="http://player.vimeo.com/video/44807536" width="660" height="371" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
         <div style="clear:both;"></div>
@@ -92,12 +104,11 @@ With the MTA data it's easy to see...</div>
         </div>
         <div class="content">
         	<h3 class="part_title">Student Riders</h3>
-            <div class="legend">Students MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. They allows three travel perd day between 5:30 a.m. and 8:30 p.m.
-Supposedly used only on school days, we used NYC Department of Education's calendar to take a look during holidays usage.</div>
+            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. They allow three trips per day between 5:30 a.m. and 8:30 p.m.  Where are all of these students going? And why?</div>
 			<div id="mailbox">
             	<img src="img/mail.png" alt="contact us" /> 
-                <p>You think you might know why a station is particularly visited?
-Send us an email at <a href="#">datavis@fabernovel.com</a>, we'd love to hear your insight!</p>
+                <p>If you think you know why a particular station is visited so heavily by students, send us an email at <a href="mailto:data@fabernovel.com?subject=Hello">data@fabernovel.com</a> - we'd love to hear your insights!
+                </p>
 <div style="clear:both;"></div>
             </div>
         </div>
@@ -111,12 +122,21 @@ Send us an email at <a href="#">datavis@fabernovel.com</a>, we'd love to hear yo
         </div>
         <div class="content">
         	<h3 class="part_title">Most Visited Stations: Weekdays vs Weekends </h3>
-            <div class="legend">Where do all those 1.6 billion riders go on the weekdays?  And where do they go on the weekends?  With the data the MTA provides, it's simple to see.</div>
-            
+            <div class="legend">Where do all those 1.6 billion riders go on the weekdays? And where do they go on the weekends? Our dataviz can tell you:</div>
+            <div class="filters">
+            	<ul>
+        			<li><a href="#">Weekends</a></li>
+           		 	<li><a href="#">Weekdays</a></li>
+            		<li><a href="#" style="margin-left:50px;">Manhattan</a></li>
+            		<li><a href="#">Brooklyn</a></li>
+                    <li><a href="#">Queens</a></li>
+                    <li><a href="#">The Bronx</a></li>
+       			</ul>
+            </div>
         </div>
         <div style="clear:both;"></div>
     </div>
-    
+     
     
     <div id="part5" class="part">
     	<div class="picto">
@@ -124,8 +144,59 @@ Send us an email at <a href="#">datavis@fabernovel.com</a>, we'd love to hear yo
         </div>
         <div class="content">
         	<h3 class="part_title">Who goes where</h3>
-            <div class="legend">We know from studies that 7-day pass users have a median income of $37,600, while 30-day pass users have a median income of $63,000.  We also know that student card users have an average age of x, while senior/disabled card users have an average age of Y.  How do those groups move around the city differently?</div>
-            
+            <div class="legend">Students, Seniors, 7-Day Pass Users and 30-Day Pass Users: where do they go?  How do they move around the city differently?</div>
+            <div class="filters">
+            	<ul class="layerswitch">
+      				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>
+      				<li><a id="macsym.nyc-sub-sen-dis" href="#">Senior citizen / Disabled</a></li>
+      				<li><a id="macsym.nyc-sub-7days" href="#">7-Days</a></li>
+     				<li><a id="macsym.nyc-sub-30days" href="#">30-Days</a></li>
+   				</ul>
+            </div>
+            <div id="mymap"></div>
+
+<script type='text/javascript'>
+	
+    // Declare variables
+    var map, interaction;
+    // Set initial map layer
+    var layer = 'macsym.nyc-sub-30days';
+    // Static part of the map url
+    var urlBase = 'http://api.tiles.mapbox.com/v3/macsym.map-d4kkzffc,';
+    // Full map url
+    var url = urlBase + layer + '.jsonp';
+
+    wax.tilejson(url, function(tilejson) {
+      // Set minimum zoom limit
+      tilejson.minzoom = 13;
+      // Set maximum zoom limit
+      tilejson.maxzoom = 16;
+      map = new MM.Map('mymap',
+        new wax.mm.connector(tilejson));
+      wax.mm.zoomer(map, tilejson).appendTo(map.parent);
+      interaction = wax.mm.interaction().map(map).tilejson(tilejson)
+        .on(wax.tooltip().parent(map.parent).events());
+      wax.mm.attribution(map, tilejson).appendTo(map.parent);
+      map.setCenterZoom({ lat: 40.73, lon: -73.97 }, 13);
+    });
+    
+    $('ul.layerswitch a').click(function (e) {
+		  e.preventDefault();
+  $('ul.layerswitch a').removeClass('active');
+  $(this).addClass('active');
+  layer = this.id;
+  refreshMap();
+});
+
+    function refreshMap() {
+      url = urlBase + layer + '.jsonp';
+      wax.tilejson(url, function(tilejson) {
+        map.setLayerAt(0, new wax.mm.connector(tilejson));
+        interaction.tilejson(tilejson);
+      });
+    }
+  </script>
+  
         </div>
         <div style="clear:both;"></div>
     </div>
@@ -134,40 +205,47 @@ Send us an email at <a href="#">datavis@fabernovel.com</a>, we'd love to hear yo
   
   
   
+  
+  
   <footer>
-  	<div class="tools">
-  			<a href="#" id="pinterest_bt_footer" class="pinterest_bt"><img src="img/pinterest_icon.png" alt="pinterest"/></a>
-         	<a href="#" id="twitter_bt_footer" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
-         	<a href="#" id="facebook_bt_footer" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
+  	<div id="footer_links">
+    	<div id="links_wrapper">
+    		<a id="fabernovel" href="http://www.fabernovel.com/"><img src="img/faber_logo_blue.png" alt="faberNovel, ideas with legs" /></a>
+  			<div class="tools">
+  				<a href="#" id="pinterest_bt_footer" class="pinterest_bt"><img src="img/pinterest_icon.png" alt="pinterest"/></a>
+         		<a href="#" id="twitter_bt_footer" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
+         		<a href="#" id="facebook_bt_footer" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
+    		</div>
+        </div>
+        <div style="clear:both;"></div>
     </div>
   	<div id="part6">
     	<div class="picto">
         	<img src="img/picto_06.png" alt="About" />
         </div>
         <div class="content">
-        	<h3 class="part_title">ABOUT</h3>
-            <div class="legend">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum justo eu purus tincidunt facilisis. Etiam eget libero ut dolor sollicitudin sollicitudin. Quisque vulputate sapien vitae dolor egestas tincidunt. Suspendisse et ante augue, ac sollicitudin urna. Quisque lacinia quam ac dolor placerat adipiscing in vel libero. Aenean tincidunt rutrum velit in porta. Pellentesque sapien tellus, congue vel adipiscing nec, malesuada ac elit. In in eros diam. Sed id tortor odio. Nunc fermentum ante a nunc aliquam ultricies. Aliquam eget lacus a odio pellentesque semper vel et libero. Mauris aliquam gravida erat ut ultricies. Vestibulum auctor elementum risus, quis porta risus aliquet eget. </div>
-            <div id="contact">
-            	<h3>Get in touch</h3>
-            	<p>
-            		<b>Paris</b>   <a href="#">meet_paris@fabernovel.com</a><br/>	
-					<b>San Francisco</b>     <a href="#">meet_sf@fabernovel.com</a><br/>
-					<b>Moscow</b>     <a href="#">meet_moscow@fabernovel.com</a>	<br/>
-					<b>Ho Chi Minh City</b>     <a href="#">meet_hcmc@fabernovel.com</a><br/>
-					<b>New York</b>     <a href="#">meet_nyc@fabernovel.com</a><br/>
-            	</p>
+        	<div id="about">
+        		<h3>ABOUT</h3>
+            	<div class="legend">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum justo eu purus tincidunt facilisis. Etiam eget libero ut dolor sollicitudin sollicitudin. Quisque vulputate sapien vitae dolor egestas tincidunt. Suspendisse et ante augue, ac sollicitudin urna. Quisque lacinia quam ac dolor placerat adipiscing in vel libero. Aenean tincidunt rutrum velit in porta. Pellentesque sapien tellus, congue vel adipiscing nec, malesuada ac elit. In in eros diam. Sed id tortor odio. Nunc fermentum ante a nunc aliquam ultricies. Aliquam eget lacus a odio pellentesque semper vel et libero. Mauris aliquam gravida erat ut ultricies. Vestibulum auctor elementum risus, quis porta risus aliquet eget. </div>
             </div>
-            <a id="dl_poster" href="#">Download the poster</a>
-            <a id="fabernovel" href="#"><img src="img/faber_logo.png" alt="faberNovel, ideas with legs" /></a>
-        </div>
-        <div style="clear:both;"></div>
+            <div id="poster">
+            	<img alt="poster snapshot" src="img/poster.jpg" />
+            	<a id="dl_poster" href="#">Download the poster</a>
+        	</div>
+            <div id="contact">
+            	<h4>Get in touch</h4>
+                <a href="mailto:meet_paris@fabernovel.com?subject=Hello"><img src="img/paris.png" alt="contact fabernovel paris" /><p>Paris</p></a>
+                <a href="mailto:meet_sf@fabernovel.com?subject=Hello"><img src="img/sf.png" alt="contact fabernovel paris" /><p>San Francisco</p></a>
+                <a href="mailto:meet_nyc@fabernovel.com?subject=Hello"><img src="img/nyc.png" alt="contact fabernovel paris" /><p>New York</p></a>
+                <a href="mailto:meet_moscou@fabernovel.com?subject=Hello"><img src="img/moscou.png" alt="contact fabernovel paris" /><p>Moscou</p></a>
+            </div>
+        	<div style="clear:both;"></div>
+    	</div>
     </div>
-
+    <div style="clear:both;"></div>
+    <p id="copyright">© 2012 - Copyright fabernovel - All Rights Reserved</p>
   </footer>
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  
 
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
