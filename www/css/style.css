@@ -633,3 +633,11 @@ footer {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+#result_part1 {
+	margin-left : 200px;
+}
+
+#map {
+	margin-top : 30px;
+}

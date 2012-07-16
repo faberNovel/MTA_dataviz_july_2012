@@ -16,6 +16,8 @@
  <script src='js/jquery.scrollTo.js' type='text/javascript'></script>
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+  <script src="js/raphael.js"></script>
   
 <!--LINKS autocomplete-->
   <script type='text/javascript' src='js/jquery.autocomplete.js'></script>
@@ -83,14 +85,18 @@
             <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
-        			<li><a href="#">Annual ridership</a></li>
-           		 	<li><a href="#">Weekdays ridership</a></li>
-            		<li><a href="#">Weekends ridership</a></li>
-            		<li><a href="#">Number of Stations</a></li>
+        			<li><a href="javascript:getdata('1')">Annual ridership</a></li>
+           		 	<li><a href="javascript:getdata('2')">Weekdays ridership</a></li>
+            		<li><a href="javascript:getdata('3')">Weekends ridership</a></li>
+            		<li><a href="javascript:getdata('4')">Number of Stations</a></li>
        			</ul>
             </div>
             
         </div>
+ 		<div style="clear:both;"></div>
+		<div id='result_part1'>
+			
+		</div>
         <div style="clear:both;"></div>
     </div>
     
@@ -121,6 +127,7 @@
                 </p>
 <div style="clear:both;"></div>
             </div>
+			<div id="map"></div>
         </div>
         <div style="clear:both;"></div>
     </div>
