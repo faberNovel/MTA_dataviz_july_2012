@@ -14,5 +14,9 @@ $(document).ready(function() {
 			selectFirst: false
 	});
 	
+	$('a.test').click(function(){
+			$.scrollTo($("#part1"), 700);
+	});
+	
 	
 });

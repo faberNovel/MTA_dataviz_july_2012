@@ -12,11 +12,20 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic,700italic,900italic,300italic,300' rel='stylesheet' type='text/css'>
+ <script src='js/libs/jquery-1.7.1.min.js' type='text/javascript'></script>
+ <script src='js/jquery.scrollTo.js' type='text/javascript'></script>
+
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  
+<!--LINKS autocomplete-->
+  <script type='text/javascript' src='js/jquery.autocomplete.js'></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css" />
+ <!---->
+
   <link rel="shortcut icon" type="image/x-icon" href="http://www.fabernovel.com/favicon_fabernovel.ico">
   
   <!--LINKS WAX-->
-  <script src='js/libs/jquery-1.7.1.min.js' type='text/javascript'></script>
+ 
   <script src='wax/ext/modestmaps.min.js' type='text/javascript'></script>
   <script src='wax/dist/wax.mm.js' type='text/javascript'></script>
   <link href='wax/theme/controls.css' rel='stylesheet' type='text/css' />
@@ -48,7 +57,7 @@
     	<div id="nav">
         	<table>
 				<tr class="nav_bottom_border">
-					<td class="nav_left_border"><a href="#part1">The Borough Breakdown</a></td>
+					<td class="nav_left_border"><a class='test'>The Borough Breakdown</a></td>
 					<td class="nav_left_border"><a href="#part4">Most Visited Stations</a></td>
                		<td class="nav_left_border"><a href="#part5">Who Goes Where</a></td>
 				</tr>
