@@ -39,7 +39,8 @@
     	<div id="title">
     		<h1>1.6  billion  rides</h1>
         	<a href="#" class="pinterest_bt" ><img src="img/pinterest_icon.png" alt="pinterest"/></a>
-         	<a href="#" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
+         	<a href="https://twitter.com/share?url=http://facebook.com&text=djsqhdsq&via=fabernovel&related=fabernovel" data-lang="en" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
+
          	<a href="#" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
             <div style="clear:both;"></div>	
         	<h2>A story of NYC subways, big data and YOU!</h2>
@@ -239,7 +240,7 @@
             </div>
             <div id="poster">
             	<img alt="poster snapshot" src="img/poster.jpg" />
-            	<a id="dl_poster" href="#">Download the poster</a>
+            	<a id="dl_poster" href="downloadfile.php">Download the poster</a>
         	</div>
             <div id="contact">
             	<h4>Get in touch</h4>
