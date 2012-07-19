@@ -121,13 +121,15 @@
         <div class="content">
         	<h3 class="part_title">Student Riders</h3>
             <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. They allow three trips per day between 5:30 a.m. and 8:30 p.m.  Where are all of these students going? And why?</div>
+
+			<div id="map"></div>
 			<div id="mailbox">
             	<img src="img/mail.png" alt="contact us" /> 
                 <p>If you think you know why a particular station is visited so heavily by students, send us an email at <a href="mailto:data@fabernovel.com?subject=Hello">data@fabernovel.com</a> - we'd love to hear your insights!
                 </p>
 <div style="clear:both;"></div>
             </div>
-			<div id="map"></div>
+		
         </div>
         <div style="clear:both;"></div>
     </div>
