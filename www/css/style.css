@@ -635,7 +635,51 @@ footer {
 }
 
 #result_part1 {
-	margin-left : 200px;
+	width : 130px;
+	float : left;
+	border : 0px solid red;
+}
+
+#result_part2 {
+	width : 130px;
+	float : left;
+	border : 0px solid red;
+	margin-left : 10px;
+}
+
+#result_part3 {
+	width : 130px;
+	float : left;
+	border : 0px solid red;
+	margin-left : 10px;
+}
+
+#result_part4 {
+	width : 130px;
+	float : left;
+	border : 0px solid red;
+	margin-left : 10px;
+}
+
+ul.all_result_part1 {
+	list-style:none;
+
+}
+
+.all_result_part1 div {
+	border : 0px solid red;
+
+}
+
+#graph_result4 {
+	border : 1px solid red;
+	width : 600px;
+	margin-left : 10px;
+	height : 200px;
+}
+
+#result_container_part1 {
+	margin-left : 170px;
 }
 
 #map {

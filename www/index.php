@@ -85,17 +85,30 @@
             <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
-        			<li><a href="javascript:getdata('1')">Annual ridership</a></li>
-           		 	<li><a href="javascript:getdata('2')">Weekdays ridership</a></li>
-            		<li><a href="javascript:getdata('3')">Weekends ridership</a></li>
-            		<li><a href="javascript:getdata('4')">Number of Stations</a></li>
+        			<li><a href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
+           		 	<li><a href="javascript:get_data('weekdays_ridership')">Weekdays ridership</a></li>
+            		<li><a href="javascript:get_data('weekend_ridership')">Weekends ridership</a></li>
+            		<li><a href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
        			</ul>
             </div>
             
         </div>
  		<div style="clear:both;"></div>
-		<div id='result_part1'>
-			
+		<div id='result_container_part1'>
+			<ul class='all_result_part1'>
+				<li>
+					<div id='result_part1'></div>
+				</li>
+				<li>
+					<div id='result_part2'></div>
+				</li>
+				<li>
+					<div id='result_part3'></div>
+				</li>
+				<li>
+					<div id='result_part4'></div>
+				</li>
+			</ul>
 		</div>
         <div style="clear:both;"></div>
     </div>
@@ -144,15 +157,18 @@
             <div class="legend">Where do all those 1.6 billion riders go on the weekdays? And where do they go on the weekends? Our dataviz can tell you:</div>
             <div class="filters">
             	<ul>
+					<li><a href="#">Weekdays</a></li>
         			<li><a href="#">Weekends</a></li>
-           		 	<li><a href="#">Weekdays</a></li>
-            		<li><a href="#" style="margin-left:50px;">Manhattan</a></li>
+           		 	<li><a href="#" style="margin-left:50px;">Manhattan</a></li>
             		<li><a href="#">Brooklyn</a></li>
                     <li><a href="#">Queens</a></li>
                     <li><a href="#">The Bronx</a></li>
        			</ul>
             </div>
+			<div id='graph_result4'>
         </div>
+	
+		</div>
         <div style="clear:both;"></div>
     </div>
      
@@ -269,6 +285,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
  <script src="js/mta.js"></script>
+ <script src="js/app.js"></script>
 
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
