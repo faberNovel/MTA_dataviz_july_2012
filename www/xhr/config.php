@@ -16,9 +16,9 @@ if (strstr($_SERVER['HTTP_HOST'],'.dev')) {
 	//echo "hgds";
 }
 else {
-	$db_user = 'root';
-	$db_pass = 'root';
-	$db_name = 'mta_2012';
+	$db_user = 'data';
+	$db_pass = 'noo9iegh';
+	$db_name = 'data';
 }
 
 $db = mysql_connect('localhost', $db_user, $db_pass);
