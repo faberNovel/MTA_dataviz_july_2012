@@ -85,10 +85,10 @@
             <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
-        			<li><a href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
-           		 	<li><a href="javascript:get_data('weekdays_ridership')">Weekdays ridership</a></li>
-            		<li><a href="javascript:get_data('weekend_ridership')">Weekends ridership</a></li>
-            		<li><a href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
+        			<li><a class='active' id='annual_ridership' href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
+           		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Weekdays ridership</a></li>
+            		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Weekends ridership</a></li>
+            		<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
        			</ul>
             </div>
             
@@ -113,7 +113,7 @@
         <div style="clear:both;"></div>
     </div>
     
-    
+    <?php if (0) {?>
     <div id="part2" class="part">
     	<div class="picto">
         	<img src="img/picto_02.png" alt="A Snapshot of New Years' Eve" />
@@ -125,6 +125,7 @@
         </div>
         <div style="clear:both;"></div>
     </div>
+	<?php } ?>
     
     
     <div id="part3" class="part">
@@ -157,12 +158,12 @@
             <div class="legend">Where do all those 1.6 billion riders go on the weekdays? And where do they go on the weekends? Our dataviz can tell you:</div>
             <div class="filters">
             	<ul>
-					<li><a href="#">Weekdays</a></li>
-        			<li><a href="#">Weekends</a></li>
-           		 	<li><a href="#" style="margin-left:50px;">Manhattan</a></li>
-            		<li><a href="#">Brooklyn</a></li>
-                    <li><a href="#">Queens</a></li>
-                    <li><a href="#">The Bronx</a></li>
+					<li><a class='active' id='filter_weekday_ridership' href="javascript:show_most_vsited_stattions('weekday_ridership')">Weekdays</a></li>
+        			<li><a id='filter_weekend_ridership' href="javascript:show_most_vsited_stattions('weekend_ridership')">Weekends</a></li>
+           		 	<li><a class='active' id='filter_MNH' href="javascript:show_most_vsited_stattions('MNH')" style="margin-left:50px;">Manhattan</a></li>
+            		<li><a id='filter_BK' href="javascript:show_most_vsited_stattions('BK')">Brooklyn</a></li>
+                    <li><a id='filter_QNS 'href="javascript:show_most_vsited_stattions('QNS')">Queens</a></li>
+                    <li><a id='filter_BX' href="javascript:show_most_vsited_stattions('BX')">The Bronx</a></li>
        			</ul>
             </div>
 			<div id='graph_result4'>
@@ -283,11 +284,9 @@
   
 
   <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
- <script src="js/mta.js"></script>
- <script src="js/app.js"></script>
-
-  <script>
+  <script src="js/mta.js"></script>
+  <script src="js/app.js"></script>
+ <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';

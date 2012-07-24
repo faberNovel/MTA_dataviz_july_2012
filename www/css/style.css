@@ -377,7 +377,12 @@ header {
 .filters ul li a:hover, .filters ul li a:focus{
 	background-color:#1A263D;
 	color:#E6EEEE;
-	}
+}
+
+.filters ul li a.active {
+	background-color:#1A263D;
+	color:#E6EEEE;
+}
 	
 #mailbox{
 	background-color:#CFE6E6;
@@ -636,12 +641,14 @@ footer {
 
 #result_part1 {
 	width : 130px;
+	height : 300px;
 	float : left;
 	border : 0px solid red;
 }
 
 #result_part2 {
 	width : 130px;
+	height : 300px;
 	float : left;
 	border : 0px solid red;
 	margin-left : 10px;
@@ -649,6 +656,7 @@ footer {
 
 #result_part3 {
 	width : 130px;
+		height : 300px;
 	float : left;
 	border : 0px solid red;
 	margin-left : 10px;
@@ -656,6 +664,7 @@ footer {
 
 #result_part4 {
 	width : 130px;
+	height : 300px;
 	float : left;
 	border : 0px solid red;
 	margin-left : 10px;

@@ -18,14 +18,43 @@ $(document).ready(function() {
 			$.scrollTo(325, 700);
 	});
 	
+	show_most_vsited_stattions('MNH');
+	get_data('annual_ridership');
+});
+
+function show_most_vsited_stattions(key) {
+	$('#graph_result4').html('');
+	var filter_week = '';
+	var filter_bor = '';
+	
+	if (key == 'weekday_ridership' || key == 'weekend_ridership') {
+		$('#filter_weekday_ridership').removeClass('active');
+		$('#filter_weekend_ridership').removeClass('active');
+		filter_week = key;
+		if ($('#filter_BK').hasClass('active')) filter_bor = 'BK';
+		if ($('#filter_QNS').hasClass('active')) filter_bor = 'QNS';
+		if ($('#filter_BX').hasClass('active')) filter_bor = 'BX';
+		if ($('#filter_MNH').hasClass('active')) filter_bor = 'MNH';
+	}
+	if (key == 'BK' || key == 'BX' || key == 'MNH' || key == 'QNS') {
+		$('#filter_BX').removeClass('active');
+		$('#filter_MNH').removeClass('active');
+		$('#filter_BK').removeClass('active');
+		$('#filter_QNS').removeClass('active');
+		if ($('#filter_weekday_ridership').hasClass('active')) filter_week = 'weekday_ridership';
+		if ($('#filter_weekend_ridership').hasClass('active')) filter_week = 'weekend_ridership';
+		filter_bor = key;
+	}
+	console.log(filter_week + ' ' + filter_bor);
+	$('#filter_' + key).addClass('active');
 	
 	var paper_graph4 = Raphael("graph_result4", 660, 800);
 	x = 50;
 	y = 100;
 	var c = paper_graph4.path("M50 100L500 100");
-	c.attr({fill: '', stroke: '#000000', 'stroke-width': 3});  
-	
-	$.getJSON("xhr/get_most_visited_stations.php",
+	c.attr({fill: '', stroke: '#000000', 'stroke-width': 3});
+
+	$.getJSON("xhr/get_most_visited_stations.php?field=" + filter_week + "&borough=" + filter_bor,
 	function(data){
 		$.each(data, function(key, value){
 				var circle = paper_graph4.circle(x,y,value.radius);;
@@ -33,9 +62,8 @@ $(document).ready(function() {
 				x = x + 65;
 		});
 	});
-	
 
-});
+}
 
 var x_svg = 128;
 var nb_start_x = 5;
@@ -44,9 +72,6 @@ var interval_circle = 13;
 var circle_radius = 5;
 var nb1;
 var all_nb;
-
-//get_data();
-//alert(all_nb);
 
 function display_graph1(nb1) {
 	var paper1 = Raphael("result_part1",x_svg, 300);
@@ -93,6 +118,7 @@ function display_graph1(nb1) {
 
  function display_graph3(nb) {
 	var paper3 = Raphael("result_part3",x_svg, 300);
+
 	startx = nb_start_x;
 	starty = nb_start_y;
 	for (i=1; i<nb; i++)
@@ -133,24 +159,16 @@ function display_graph4(nb) {
 	}
 }
 
-
-function getdata (id) {
-
-		$.getJSON("xhr/get_data.php?id=" + id,
-		function(data){
-			//alert(data);
-			$.each(data, function(count,item){
-				console.log(item.station);
-				$('#result_part1').html(item.station);
-			});
-		});
-}
-
 function get_data(s) {
 	$('#result_part1').html('');
 	$('#result_part2').html('');
 	$('#result_part3').html('');
 	$('#result_part4').html('');
+	$('#annual_ridership').removeClass('active');
+	$('#weekdays_ridership').removeClass('active');
+	$('#weekend_ridership').removeClass('active');
+	$('#number_of_stations').removeClass('active');
+	$('#' + s).addClass('active');
 	$.getJSON("xhr/get_ridership.php?s=" + s,
 	function(data){
 		display_graph1(data[0].nb1);
@@ -168,7 +186,7 @@ window.onload = function () {
 		paper.add(mapdata);
 	//	paper.canvas.style.zIndex = "50";
 		var circles = [
-			{"id":1,"x":200,"y":220,"radius":20,"text" : "coucou"},
+			{"id":1,"x":2,"y":220,"radius":20,"text" : "coucou"},
 			{"id":2,"x":149,"y":150,"radius":20,"text" : "allo"},
 			{"id":3,"x":300,"y":300,"radius":10,"text" : "dsqdsq"}
 		]

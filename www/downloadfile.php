@@ -1,7 +1,6 @@
-<?PHP
+<?php
  // Define the path to file
- $file = 'img/faber_logo_blue.png';
- 
+ $file = 'img/datavis-poster.png';
  if(!file)
  {
      // File doesn't exist, output error
@@ -19,4 +18,4 @@
      // Read the file from disk
      readfile($file);
  }
- ?>
+?>

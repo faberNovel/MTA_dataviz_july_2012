@@ -112,25 +112,25 @@ if ($_GET['s'] == 'weekend_ridership') {
 	
 	$data = array(); //Initializing the results array
 
-	$query = "select sum(weekend_ridership)/100000 as nb1 from ridership where borough = 'MNH'";
+	$query = "select sum(weekend_ridership)/50000 as nb1 from ridership where borough = 'MNH'";
 	$result = mysql_query($query);
 	while ($row = mysql_fetch_assoc($result)){
 	        array_push($data, $row);
 	}
 
-	$query = "select sum(weekend_ridership)/100000 as nb2 from ridership where borough = 'BK'";
+	$query = "select sum(weekend_ridership)/50000 as nb2 from ridership where borough = 'BK'";
 	$result = mysql_query($query);
 	while ($row = mysql_fetch_assoc($result)){
 	        array_push($data, $row);
 	}
 
-	$query = "select sum(weekend_ridership)/100000 as nb3 from ridership where borough = 'QNS'";
+	$query = "select sum(weekend_ridership)/50000 as nb3 from ridership where borough = 'QNS'";
 	$result = mysql_query($query);
 	while ($row = mysql_fetch_assoc($result)){
 	        array_push($data, $row);
 	}
 
-	$query = "select sum(weekend_ridership)/100000 as nb4 from ridership where borough = 'BX'";
+	$query = "select sum(weekend_ridership)/50000 as nb4 from ridership where borough = 'BX'";
 	$result = mysql_query($query);
 	while ($row = mysql_fetch_assoc($result)){
 	        array_push($data, $row);
