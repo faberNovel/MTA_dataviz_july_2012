@@ -7,8 +7,9 @@ $data = array(); //Initializing the results array
 
 $field = $_GET['field'];
 $borough = $_GET['borough'];
+$start = $_GET['start'];
 
-$query = "select id,SQRT($field*PI())/30 as radius from ridership where borough = '$borough' order by $field DESC limit 8";
+$query = "select id,station,$field as nb,SQRT($field*PI())/30 as radius from ridership where borough = '$borough' order by $field DESC limit $start,8";
 //echo $query;
 $result = mysql_query($query);
 while ($row = mysql_fetch_assoc($result)){

@@ -178,8 +178,8 @@
                     <li><a id='filter_BX' href="javascript:show_most_vsited_stattions('BX')">The Bronx</a></li>
        			</ul>
             </div>
-			<div id='graph_result4'>
-        </div>
+			<div id='graph_result4'></div>
+			<div id='nb_item'>10</div>
 	
 		</div>
         <div style="clear:both;"></div>

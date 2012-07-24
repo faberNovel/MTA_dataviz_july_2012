@@ -26,9 +26,7 @@ $(window).scroll(function(e) {
     }
     else if ($(this).scrollTop() >= bottomAnchor) 
     {
-        console.log(bottomAnchor - topOffset);
-		console.log("gfffo : ");
-        $('.scroller').css({
+      	$('.scroller').css({
             'position': 'relative',
             'top': (bottomAnchor - topAnchor) + 'px'
         });            
