@@ -9,7 +9,7 @@ function is_prod() {
 	if (strstr($_SERVER['HTTP_HOST'],'.dev')) return 0;
 }
 
-if (strstr($_SERVER['HTTP_HOST'],'.dev')) {
+if (strstr($_SERVER['HTTP_HOST'],'localhost')) {
 	$db_user = 'root';
 	$db_pass = 'root';
 	$db_name = 'mta_2012';

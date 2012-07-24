@@ -49,6 +49,15 @@ function show_most_vsited_stattions(key) {
 	$('#filter_' + key).addClass('active');
 	
 	var paper_graph4 = Raphael("graph_result4", 660, 800);
+	var test=["graph_result4",100,22,{"path":"M0,7c0-3.867,3.135-7,7-7h17c3.867,0,7,3.133,7,7v8c0,3.865-3.133,7-7,7H7c-3.865,0-7-3.135-7-7V7z","fill":"#24293D","stroke":"none","type":"path"},{"path":"M12,4.588 22.326,11.219 12,17.85 \tz","fill":"#85CCD5","stroke":"none","type":"path"}];
+	e = paper_graph4.add(test);
+	e.attr("x", "100");
+	e.attr("y", "200");
+	e.data("i",'400')
+	e.transform("t530,90");
+	e.click(function () {
+	            alert(this.data("i"));
+	 });
 	x = 50;
 	y = 100;
 	var c = paper_graph4.path("M50 100L500 100");
@@ -199,7 +208,10 @@ window.onload = function () {
 			//infobulle);
 			//var r = paper.add(infobulle);
 			console.log(value.x);
-			r.attr("x",200);
+			//r.attr("x",200);
+			x_bulle = value.x - 10;
+			y_bulle = value.y - 140;
+			r.transform("t" + x_bulle + "," + y_bulle);
 		//	r.toFront();
 			//infobulle.attr("y",value.y);
 			
