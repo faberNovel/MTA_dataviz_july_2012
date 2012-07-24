@@ -326,7 +326,7 @@ header {
 .content{
 	float:left;
 	width: 660px;
-	min-height:200px;
+	min-height:150px;
 	}
 	
 .content .part_title {
@@ -670,18 +670,46 @@ footer {
 	margin-left : 10px;
 }
 
+#show_all_title {
+	width : 600px;
+	margin-left : 170px;
+}
+
+ul.all_title {
+	list-style:none;
+}
+
+#text_part1 {
+	float :left;
+	margin-left : 10px;
+}
+
+#text_part2 {
+	float :left;
+	margin-left : 20px;
+}
+
+#text_part3 {
+	float :left;
+	margin-left : 60px;
+}
+
+#text_part4 {
+	float :left;
+	margin-left : 90px;
+}
+
+
 ul.all_result_part1 {
 	list-style:none;
-
 }
 
 .all_result_part1 div {
 	border : 0px solid red;
-
 }
 
 #graph_result4 {
-	border : 1px solid red;
+	border : 0px solid red;
 	width : 600px;
 	margin-left : 10px;
 	height : 200px;

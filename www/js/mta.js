@@ -22,6 +22,18 @@ $(document).ready(function() {
 	get_data('annual_ridership');
 });
 
+function pager_most_visited_station() {
+	filter_bor = '';
+	filter_week = '';
+	if ($('#filter_BK').hasClass('active')) filter_bor = 'BK';
+	if ($('#filter_QNS').hasClass('active')) filter_bor = 'QNS';
+	if ($('#filter_BX').hasClass('active')) filter_bor = 'BX';
+	if ($('#filter_MNH').hasClass('active')) filter_bor = 'MNH';
+	if ($('#filter_weekday_ridership').hasClass('active')) filter_week = 'weekday_ridership';
+	if ($('#filter_weekend_ridership').hasClass('active')) filter_week = 'weekend_ridership';
+	console.log(filter_week + ' ' + filter_bor);
+}
+
 function show_most_vsited_stattions(key) {
 	$('#graph_result4').html('');
 	var filter_week = '';
@@ -48,26 +60,38 @@ function show_most_vsited_stattions(key) {
 	console.log(filter_week + ' ' + filter_bor);
 	$('#filter_' + key).addClass('active');
 	
+
 	var paper_graph4 = Raphael("graph_result4", 660, 800);
-	var test=["graph_result4",100,22,{"path":"M0,7c0-3.867,3.135-7,7-7h17c3.867,0,7,3.133,7,7v8c0,3.865-3.133,7-7,7H7c-3.865,0-7-3.135-7-7V7z","fill":"#24293D","stroke":"none","type":"path"},{"path":"M12,4.588 22.326,11.219 12,17.85 \tz","fill":"#85CCD5","stroke":"none","type":"path"}];
-	e = paper_graph4.add(test);
-	e.attr("x", "100");
-	e.attr("y", "200");
+	
+	var line = paper_graph4.path("M10 100L560 100");
+	line.attr({fill: '', stroke: '#1A263D', 'stroke-width': 3});
+
+	var arrow_right_on =["graph_result4",100,22,{"path":"M0,7c0-3.867,3.135-7,7-7h17c3.867,0,7,3.133,7,7v8c0,3.865-3.133,7-7,7H7c-3.865,0-7-3.135-7-7V7z","fill":"#24293D","stroke":"none","type":"path"},{"path":"M12,4.588 22.326,11.219 12,17.85 \tz","fill":"#85CCD5","stroke":"none","type":"path"}];
+	e = paper_graph4.add(arrow_right_on);
 	e.data("i",'400')
-	e.transform("t530,90");
+	e.transform("t550,90");
+	//alert(this.data("i"));
 	e.click(function () {
-	            alert(this.data("i"));
-	 });
-	x = 50;
+		pager_most_visited_station();
+	});
+	
+	var arrow_left_on=[11,0,31,22,{"path":"M31,15c0,3.867-3.135,7-7,7H7c-3.867,0-7-3.133-7-7V7c0-3.865,3.133-7,7-7h17c3.865,0,7,3.135,7,7V15z","fill":"#24293D","stroke":"none","type":"path"},{"path":"M19,17.412 8.674,10.781 19,4.15 \tz","fill":"#85CCD5","stroke":"none","type":"path"}];
+	e = paper_graph4.add(arrow_left_on);
+	//e.data("i",'400')
+	e.transform("t0,90");
+	e.click(function () {
+		pager_most_visited_station();
+	});
+	
+	x = 70;
 	y = 100;
-	var c = paper_graph4.path("M50 100L500 100");
-	c.attr({fill: '', stroke: '#000000', 'stroke-width': 3});
+
 
 	$.getJSON("xhr/get_most_visited_stations.php?field=" + filter_week + "&borough=" + filter_bor,
 	function(data){
 		$.each(data, function(key, value){
 				var circle = paper_graph4.circle(x,y,value.radius);;
-				circle.attr("fill", "#f00");
+				circle.attr("fill", "#76CDD3");
 				x = x + 65;
 		});
 	});
@@ -220,9 +244,9 @@ window.onload = function () {
 			var circle = paper.circle(value.x,value.y, value.radius);
 	//		circle.style.zIndex = "50";
 			// Sets the fill attribute of the circle to red (#f00)
-			circle.attr("fill", "#f00");
+			circle.attr("fill", "#76CDD3");
 			// Sets the stroke attribute of the circle to white
-			circle.attr("stroke", "#fff");
+			circle.attr("stroke", "#ffffff");
 			arr[circle.id] = r;
 			arr_visible[circle.id] = true;
 			

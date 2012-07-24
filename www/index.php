@@ -94,15 +94,27 @@
             
         </div>
  		<div style="clear:both;"></div>
+		<div id='show_all_title'>
+			<ul class='all_title'>
+				<li><div id='text_part1'>MANHATTAN</div></li>
+				<li><div id='text_part2'>BROOKLYN</div></li>
+				<li><div id='text_part3'>QUEENS</div></li>
+				<li><div id='text_part4'>THE BRONX</div></li>
+			</ul>
+		</div>
+		  <div style="clear:both;"></div>
 		<div id='result_container_part1'>
 			<ul class='all_result_part1'>
 				<li>
+				
 					<div id='result_part1'></div>
 				</li>
 				<li>
+				
 					<div id='result_part2'></div>
 				</li>
 				<li>
+				
 					<div id='result_part3'></div>
 				</li>
 				<li>
