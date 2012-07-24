@@ -46,7 +46,7 @@
          	<a href="#" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
             <div style="clear:both;"></div>	
         	<h2>A story of NYC subways, big data and YOU!</h2>
-        	<p>In 2011, New York City's subways were ridden 1,640,434,672 times, generating many billions of data points. That data is all open and available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from it? faberNovel decided to find out.
+        	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
             </p>
             <form method="" >
     			<input id="searchinputbox" type="text" value="What's your station ?" maxlength="255" size="12" alt="searchinputbox" name="">
@@ -60,7 +60,7 @@
     	<div id="nav">
         	<table>
 				<tr class="nav_bottom_border">
-					<td class="nav_left_border"><a class='test'>The Borough Breakdown</a></td>
+					<td class="nav_left_border"><a class='test'>The Boroughs Breakdown</a></td>
 					<td class="nav_left_border"><a href="#part4">Most Visited Stations</a></td>
                		<td class="nav_left_border"><a href="#part5">Who Goes Where</a></td>
 				</tr>
@@ -78,10 +78,10 @@
   
   	<div id="part1" class="part">
     	<div class="picto">
-        	<img src="img/picto_01.png" alt="The Borough Breakdown" />
+        	<img src="img/picto_01.png" alt="The Boroughs Breakdown" />
         </div>
         <div class="content">
-        	<h3 class="part_title">The Borough Breakdown</h3>
+        	<h3 class="part_title">The Boroughs Breakdown</h3>
             <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
@@ -120,7 +120,7 @@
         </div>
         <div class="content">
         	<h3 class="part_title">A Snapshot of New Years' Eve</h3>
-            <div class="legend">On New Year's Eve, up to one million people, start gathering in Times Square from early in the morning to the late evening to celebrate and watch the Ball drop. Can you imagine how that extra-ordinary number of people impact Times Square - 42 St and nearby subway stations?</div>
+            <div class="legend">On New Year's Eve, up to one million people start gathering in Times Square from early in the morning to the late evening to celebrate and watch the ball drop. Can you imagine the impact that number of people has on Times Square - 42 St and nearby stations?</div>
             <iframe src="http://player.vimeo.com/video/44807536" width="660" height="371" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
         <div style="clear:both;"></div>
@@ -134,7 +134,7 @@
         </div>
         <div class="content">
         	<h3 class="part_title">Student Riders</h3>
-            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. They allow three trips per day between 5:30 a.m. and 8:30 p.m.  Where are all of these students going? And why?</div>
+            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. They allow three trips per day between 5:30 a.m. and 8:30 p.m. It's easy to figure out where kids with student MetroCards go during the week - they go to the schools. But where else? We decided to take a look. Here's what we found.</div>
 
 			<div id="map"></div>
 			<div id="mailbox">
@@ -155,7 +155,7 @@
         </div>
         <div class="content">
         	<h3 class="part_title">Most Visited Stations: Weekdays vs Weekends </h3>
-            <div class="legend">Where do all those 1.6 billion riders go on the weekdays? And where do they go on the weekends? Our dataviz can tell you:</div>
+            <div class="legend">Where do all those 1.6 billion riders go on the weekdays? And where do they go on the weekends? Our data-visualization can tell you:</div>
             <div class="filters">
             	<ul>
 					<li><a class='active' id='filter_weekday_ridership' href="javascript:show_most_vsited_stattions('weekday_ridership')">Weekdays</a></li>
@@ -180,7 +180,7 @@
         </div>
         <div class="content">
         	<h3 class="part_title">Who goes where</h3>
-            <div class="legend">Students, Seniors, 7-Day Pass Users and 30-Day Pass Users: where do they go?  How do they move around the city differently?</div>
+            <div class="legend">Where do students go versus those with senior/disabled passes?  Where do 7-day pass users, (67% African-American/Hispanic, median income $38k) go versus 30-day pass users (68% White/Asian, median income $63k)? <a href="http://secondavenuesagas.com/2010/10/20/mta-demographics-a-glimpse-at-who-rides-and-how-we-pay/">(source)</a></div>
             <div class="filters">
             	<ul class="layerswitch">
       				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>
@@ -261,8 +261,8 @@
         </div>
         <div class="content">
         	<div id="about">
-        		<h3>ABOUT</h3>
-            	<div class="legend">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum justo eu purus tincidunt facilisis. Etiam eget libero ut dolor sollicitudin sollicitudin. Quisque vulputate sapien vitae dolor egestas tincidunt. Suspendisse et ante augue, ac sollicitudin urna. Quisque lacinia quam ac dolor placerat adipiscing in vel libero. Aenean tincidunt rutrum velit in porta. Pellentesque sapien tellus, congue vel adipiscing nec, malesuada ac elit. In in eros diam. Sed id tortor odio. Nunc fermentum ante a nunc aliquam ultricies. Aliquam eget lacus a odio pellentesque semper vel et libero. Mauris aliquam gravida erat ut ultricies. Vestibulum auctor elementum risus, quis porta risus aliquet eget. </div>
+        		<h3>What is 1.6 Billion Rides?</h3>
+            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at hello@fabernovel.com.</div>
             </div>
             <div id="poster">
             	<img alt="poster snapshot" src="img/poster.jpg" />
