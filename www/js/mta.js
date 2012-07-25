@@ -27,18 +27,21 @@ $(document).ready(function() {
 	});
 	
 	$('a.goto_part4').click(function(){
-			$.scrollTo(1977, 700);
+			$.scrollTo(1955, 700);
 	});
 	
 	$('a.goto_part5').click(function(){
-			$.scrollTo(2434, 700);
+			$.scrollTo(2415, 700);
+	});
+	
+	$('a.goto_part6').click(function(){
+			$.scrollTo(3323, 700);
 	});
 	
 	show_most_vsited_stattions('MNH');
 	if (current_bo == '') {
 		get_data('annual_ridership');
 	}else {
-		console.log(current_bo);
 		get_data('number_of_stations');
 	}
 });
