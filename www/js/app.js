@@ -4,7 +4,6 @@ var topOffset = 300;
 var bottomOffset = 10;
 
 $(window).scroll(function(e) {
-	console.log($(this).scrollTop());
 	if ($(this).scrollTop() >= topAnchor && $(this).scrollTop() < bottomAnchor) 
     {   
 	

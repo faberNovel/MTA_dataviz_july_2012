@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 	$('#searchinputbox').focus(function() {
 		$('#searchinputbox').val('');
@@ -37,7 +35,12 @@ $(document).ready(function() {
 	});
 	
 	show_most_vsited_stattions('MNH');
-	get_data('annual_ridership');
+	if (current_bo == '') {
+		get_data('annual_ridership');
+	}else {
+		console.log(current_bo);
+		get_data('number_of_stations');
+	}
 });
 
 var start_ = 0;
@@ -87,7 +90,6 @@ function display_graph(filter_week,filter_bor,start_) {
 				line.attr({fill: '', stroke: '#000000', 'stroke-width': 1});
 				arr_lines[circle.id] = line;
 				line.hide();
-			
 				
 				circle.node.onmouseover = function () {
 					r = arr_nbriders[circle.id];
@@ -107,14 +109,10 @@ function display_graph(filter_week,filter_bor,start_) {
 				}
 			
 				x = x + 65;
-				
-				
-		});
-		//$('#nb_item').html(data.length);
+			});
+	
 	
 	});
-		//alert($('#nb_item').html());
-
 		if (0) {
 			var arrow_right_off = ["graph_result4",31,22,{"stroke":"none","fill":"#24293D","type":"path","path":"M0,7c0-3.867,3.135-7,7-7h17c3.867,0,7,3.133,7,7v8c0,3.865-3.133,7-7,7H7c-3.865,0-7-3.135-7-7V7z"},{"stroke":"none","fill":"#343C56","type":"path","path":"M12,4.588 22.326,11.219 12,17.85 \tz"}];
 			ri = paper_graph4.add(arrow_right_off);
@@ -223,7 +221,14 @@ function display_graph1(nb1) {
 			}
 		}
 		var circle1  = paper1.circle(o,starty, circle_radius);
-		circle1.attr("fill", "#212D42");
+		if (current_bo == 'MNH') {
+			circle1.attr("fill", "#1A263D");
+		}
+		else {
+			circle1.attr("fill", "#76CDD3");
+		}
+		circle1.attr('stroke-width',0);
+		circle1.attr('stroke','#76CDD3')
     }
  }
 
@@ -244,7 +249,14 @@ function display_graph1(nb1) {
 			}
 		}
 		var circle1  = paper2.circle(o,starty, circle_radius);
-		circle1.attr("fill", "#212D42");
+		if (current_bo == 'BK') {
+			circle1.attr("fill", "#1A263D");
+		}
+		else {
+			circle1.attr("fill", "#76CDD3");
+		}
+		circle1.attr('stroke-width',0);
+		circle1.attr('stroke','#76CDD3')
 	}
 }
 
@@ -266,7 +278,14 @@ function display_graph1(nb1) {
 			}
 		}
 		var circle1  = paper3.circle(o,starty, circle_radius);
-		circle1.attr("fill", "#212D42");
+		if (current_bo == 'QNS') {
+			circle1.attr("fill", "#1A263D");
+		}
+		else {
+			circle1.attr("fill", "#76CDD3");
+		}
+		circle1.attr('stroke-width',0);
+		circle1.attr('stroke','#76CDD3')
 	}
 }
 
@@ -287,7 +306,14 @@ function display_graph4(nb) {
 			}
 		}
 		var circle1  = paper4.circle(o,starty, circle_radius);
-		circle1.attr("fill", "#212D42");
+		if (current_bo == 'BX') {
+			circle1.attr("fill", "#1A263D");
+		}
+		else {
+			circle1.attr("fill", "#76CDD3");
+		}
+		circle1.attr('stroke-width',0);
+		circle1.attr('stroke','#76CDD3')
 	}
 }
 

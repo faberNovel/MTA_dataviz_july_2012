@@ -31,12 +31,32 @@
   <script src='wax/ext/modestmaps.min.js' type='text/javascript'></script>
   <script src='wax/dist/wax.mm.js' type='text/javascript'></script>
   <link href='wax/theme/controls.css' rel='stylesheet' type='text/css' />
+<?php
+$b_station = false;
+
+if (isset($_GET['station']) && (!empty($_GET['station']))) {
+	$b_station = true;
+	require_once "xhr/config.php";
+	$station = urldecode($_GET['station']);
+	//echo $station;
+	$sql = "select id, station,borough from ridership where station LIKE '%$station%';";
+	//echo $sql;
+	$rsd = mysql_query($sql);
+	while($rs = mysql_fetch_array($rsd)) {
+		$id = $rs['borough'];
+	}
+   $current_bo = $id;
+}
+?>
+	<script type="text/javascript">
+		var current_bo = '<?php echo $current_bo;?>';
+	</script>
   <!---->
   
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
+<header>
   	<div id="header_wrapper">
     	<div id="title">
     		<h1>1.6  billion  rides</h1>
@@ -50,7 +70,7 @@
         	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
             </p>
             <form method="" >
-    			<input id="searchinputbox" type="text" value="What's your station ?" maxlength="255" size="12" alt="searchinputbox" name="">
+    			<input id="searchinputbox" type="text" value="What's your station ?" maxlength="255" size="12" alt="searchinputbox" name="station">
            	 	<input id="searchbutton" type="submit" style="padding: 1px 8px;" value="" name="">
                 <div style="clear:both;"></div>	
        		</form>
@@ -86,7 +106,7 @@
             <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
-        			<li><a class='active' id='annual_ridership' href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
+					<li><a id='annual_ridership' href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
            		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Weekdays ridership</a></li>
             		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Weekends ridership</a></li>
             		<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
