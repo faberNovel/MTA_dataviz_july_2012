@@ -326,6 +326,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
     	</div>
     </div>
     <div style="clear:both;"></div>
+
     <p id="copyright">© 2012 - Copyright fabernovel - All Rights Reserved</p>
   </footer>
  <script src="js/plugins.js"></script>
