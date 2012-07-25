@@ -284,12 +284,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
     </div>
 
   </div>
-  
-  
-  
-  
-  
-  <footer>
+<footer>
   	<div id="footer_links">
     	<div id="links_wrapper">
     		<a id="fabernovel" href="http://www.fabernovel.com/"><img src="img/faber_logo_blue.png" alt="faberNovel, ideas with legs" /></a>
