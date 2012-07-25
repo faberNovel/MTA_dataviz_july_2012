@@ -69,7 +69,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
          	<a href="http://www.facebook.com/sharer.php?u=http://data.fabernovel.com/nyc-subway/" target='_blank' class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
             <div style="clear:both;"></div>	
         	<h2>A story of NYC subways, big data and YOU!</h2>
-        	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
+        	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a target='_blank' href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
             </p>
             <form method="" >
 				<?php if ($b_station) {
@@ -221,11 +221,13 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
             <div class="legend">Where do students go versus those with senior/disabled passes?  Where do 7-day pass users go versus 30-day pass users?  It's interesting to plot the differences: </div>
 			<ul class='part5_legend'>
 				<li>Student passes: ages 5 - 18</li>
-				<li>*Senior/disabled passes: age 65 and above + disabled</li>
-				<li>*7-day pass: average age: 40, median income: $38k</li>
-				<li>*30-day pass: average age: 38, median income: $63k</li>
+				<li>Senior/disabled passes: age 65 and above + disabled</li>
 			</ul>
-			<a href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a>
+			<ul class='part5_legend'>
+				<li>7-day pass: average age: 40, median income: $38k</li>
+				<li>30-day pass: average age: 38, median income: $63k</li>
+			</ul>
+			<a class='legendsource' target='_blank' href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a>
             <div class="filters">
             	<ul class="layerswitch">
       				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>

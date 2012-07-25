@@ -420,9 +420,19 @@ header {
 
 .part5_legend {
 	margin-left : 15px;
+	font-size : 13px;
 }
-	
-	
+
+a.legendsource {
+	text-decoration:underline;
+	color:#212d42;
+	font-size : 13px;
+}
+a.legendsource a:hover{
+	text-decoration:underline;
+	color:#fff;
+	font-size : 13px;
+}
 #mymap {
 	margin-top:20px;
 	position: absolute;
