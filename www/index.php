@@ -147,7 +147,7 @@
         </div>
         <div class="content">
         	<h3 class="part_title">Student Riders</h3>
-            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. They allow three trips per day between 5:30 a.m. and 8:30 p.m. It's easy to figure out where kids with student MetroCards go during the week - they go to the schools. But where else? We decided to take a look. Here's what we found.</div>
+            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. It's easy to figure out where kids with student MetroCards go during the week - they go to the schools. But where else? We decided to take a look. Here's what we found.</div>
 
 			<div id="map"></div>
 			<div id="mailbox">
@@ -191,7 +191,14 @@
         </div>
         <div class="content">
         	<h3 class="part_title">Who goes where</h3>
-            <div class="legend">Where do students go versus those with senior/disabled passes?  Where do 7-day pass users, (67% African-American/Hispanic, median income $38k) go versus 30-day pass users (68% White/Asian, median income $63k)? <a href="http://secondavenuesagas.com/2010/10/20/mta-demographics-a-glimpse-at-who-rides-and-how-we-pay/">(source)</a></div>
+            <div class="legend">Where do students go versus those with senior/disabled passes?  Where do 7-day pass users go versus 30-day pass users?  It's interesting to plot the differences: <a href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a></div>
+			<ul class='part5_legend'>
+				<li>Student passes: ages 5 - 18</li>
+				<li>*Senior/disabled passes: age 65 and above + disabled</li>
+				<li>*7-day pass: average age: 40, median income: $38k</li>
+				<li>*30-day pass: average age: 38, median income: $63k</li>
+				(Source)
+			</ul>
             <div class="filters">
             	<ul class="layerswitch">
       				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>

@@ -1,6 +1,6 @@
 <?php
  // Define the path to file
- $file = 'img/datavis-poster.png';
+ $file = 'img/nyc-subway-poster_by_fabernovel.png';
  if(!file)
  {
      // File doesn't exist, output error

@@ -410,13 +410,17 @@ header {
 	
 #part5 .content {
 	position:relative;
-	height:700px;
+	height:750px;
 	}	
 	
 	 .layerswitch li a.active {
 	    background-color:#1A263D;
 		color:#E6EEEE;
 	  }
+
+.part5_legend {
+	margin-left : 15px;
+}
 	
 	
 #mymap {
