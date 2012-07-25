@@ -43,6 +43,7 @@ function display_graph(filter_week,filter_bor,start_) {
 		var nb_item = 0;
 		arr_nbriders = [];
 		arr_stations = [];
+		arr_lines = [];
 		$.each(data, function(key, value){
 				var circle = paper_graph4.circle(x,y,value.radius);;
 				circle.attr("fill", "#76CDD3");
@@ -50,7 +51,7 @@ function display_graph(filter_week,filter_bor,start_) {
 				circle.data("nb",value.nb);
 				circle.data("x",x);
 				//circle.data("y",x);
-				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + " RIDERS");
+				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + "\t\tRIDERS");
 				nbriders_obj.attr({'text-anchor': 'start'});
 				nbriders_obj.attr({ "font-size": 13, "font-family": "BebasRegular" });
 				nbriders_obj.hide();
@@ -61,17 +62,32 @@ function display_graph(filter_week,filter_bor,start_) {
 				station_obj.attr({'text-anchor': 'start'});
 				station_obj.attr({"fill" : "#76CDD3","font-size": 13, "font-family": "BebasRegular" });
 				arr_stations[circle.id] = station_obj;
+				
+				start_line_x = x - 10;
+				start_line_y = y - 40;
+				end_line = start_line_x + 70;
+
+				var line = paper_graph4.path("M" +  start_line_x + " " + start_line_y + "L" + end_line  + " " + start_line_y);
+				line.attr({fill: '', stroke: '#000000', 'stroke-width': 1});
+				arr_lines[circle.id] = line;
+				line.hide();
+			
+				
 				circle.node.onmouseover = function () {
 					r = arr_nbriders[circle.id];
 					s = arr_stations[circle.id];
+					l = arr_lines[circle.id];
 					s.attr({"fill" : "#000000"});
 					r.show();
+					l.show();
 				}
 				circle.node.onmouseout = function () {
 					r = arr_nbriders[circle.id];
 					s = arr_stations[circle.id];
+					l = arr_lines[circle.id];
 					s.attr({"fill" : "#76CDD3"});
 					r.hide();
+					l.hide();
 				}
 			
 				x = x + 65;
