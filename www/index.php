@@ -179,8 +179,6 @@
        			</ul>
             </div>
 			<div id='graph_result4'></div>
-			<div id='nb_item'></div>
-	
 		</div>
         <div style="clear:both;"></div>
     </div>
