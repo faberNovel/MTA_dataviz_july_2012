@@ -15,23 +15,23 @@ $(document).ready(function() {
 	});
 	
 	$('a.goto_part1').click(function(){
-			$.scrollTo(325, 700);
+			$.scrollTo(310, 700);
 	});
 	
 	$('a.goto_part2').click(function(){
-			$.scrollTo(500, 700);
+			$.scrollTo(505, 700);
 	});
 	
 	$('a.goto_part3').click(function(){
-			$.scrollTo(882, 700);
+			$.scrollTo(890, 700);
 	});
 	
 	$('a.goto_part4').click(function(){
-			$.scrollTo(1955, 700);
+			$.scrollTo(2000, 700);
 	});
 	
 	$('a.goto_part5').click(function(){
-			$.scrollTo(2415, 700);
+			$.scrollTo(2460, 700);
 	});
 	
 	$('a.goto_part6').click(function(){
