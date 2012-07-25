@@ -89,10 +89,11 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         	<table>
 				<tr class="nav_bottom_border">
 					<td class="nav_left_border"><a class='goto_part1'>The Boroughs Breakdown</a></td>
+					<td class="nav_left_border"><a class='goto_part3'>Student Riders</a></td>
 					<td class="nav_left_border"><a class='goto_part4'>Most Visited Stations</a></td>
                		<td class="nav_left_border"><a class='goto_part5'>Who Goes Where</a></td>
 					<!--<td class="nav_left_border"><a class='goto_part2'>A Snapshot of New Years' Eve</a></td>-->
-					<td class="nav_left_border"><a class='goto_part3'>Student Riders</a></td>
+				
 					<td class="nav_left_border"><a class='goto_part6'>About</a></td>
 				</tr>
 			</table>
@@ -307,7 +308,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         </div>
         <div class="content">
         	<div id="about">
-        		<h3>What is 1.6 Billion Rides?</h3>
+        		<h3>About</h3>
             	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at hello@fabernovel.com.</div>
             </div>
             <div id="poster">

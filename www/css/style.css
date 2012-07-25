@@ -326,13 +326,14 @@ header {
 	
 .content{
 	float:left;
-	width: 660px;
+	width: 680px;
 	min-height:150px;
 	}
 	
 .content .part_title {
 	display:inline-block;
 	padding-bottom:5px;
+	word-spacing:3px;
 	color:#1A263D;
 	margin:0;
 	font-family: 'BebasRegular';
@@ -728,6 +729,10 @@ ul.all_result_part1 {
 	width : 600px;
 	margin-left : 10px;
 	height : 250px;
+}
+
+div#part4.part {
+	margin-top : 100px;
 }
 
 #result_container_part1 {
