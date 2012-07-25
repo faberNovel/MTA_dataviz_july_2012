@@ -66,12 +66,17 @@ function display_graph(filter_week,filter_bor,start_) {
 		arr_nbriders = [];
 		arr_stations = [];
 		arr_lines = [];
+		arr_index = [];
+		if (start_ == 0) index_ = 1;
+	
 		$.each(data, function(key, value){
 				var circle = paper_graph4.circle(x,y,value.radius);;
 				circle.attr("fill", "#76CDD3");
 				circle.data("station",value.station);
 				circle.data("nb",value.nb);
+				circle.data("index_",index_);
 				circle.data("x",x);
+				//alert(index_);
 				//circle.data("y",x);
 				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + ", RIDERS");
 				nbriders_obj.attr({'text-anchor': 'start'});
@@ -79,11 +84,18 @@ function display_graph(filter_week,filter_bor,start_) {
 				nbriders_obj.hide();
 				arr_nbriders[circle.id] = nbriders_obj;
 				
+				index_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('index_'));
+				index_obj.attr({'text-anchor': 'start'});
+				index_obj.attr({ "font-size": 13, "font-family": "BebasRegular" });
+				//index_obj.hide();
+				arr_index[circle.id] = index_obj;
+				
 				station_obj = paper_graph4.text(x, y + 33, value.station);
 				station_obj.rotate(45); 
 				station_obj.attr({'text-anchor': 'start'});
 				station_obj.attr({"fill" : "#76CDD3","font-size": 13, "font-weight": "bold","font-family": "Lato" });
 				arr_stations[circle.id] = station_obj;
+				index_ = index_ + 1;
 				
 				start_line_x = x - 10;
 				start_line_y = y - 40;
@@ -98,6 +110,10 @@ function display_graph(filter_week,filter_bor,start_) {
 					r = arr_nbriders[circle.id];
 					s = arr_stations[circle.id];
 					l = arr_lines[circle.id];
+					for (i in arr_index ) {
+						ob = arr_index[i];
+						ob.hide();
+					}
 					s.attr({"fill" : "#000000"});
 					r.show();
 					l.show();
@@ -106,6 +122,10 @@ function display_graph(filter_week,filter_bor,start_) {
 					r = arr_nbriders[circle.id];
 					s = arr_stations[circle.id];
 					l = arr_lines[circle.id];
+					for (i in arr_index ) {
+						ob = arr_index[i];
+						ob.show();
+					}
 					s.attr({"fill" : "#76CDD3"});
 					r.hide();
 					l.hide();
