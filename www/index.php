@@ -123,7 +123,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
  		<div style="clear:both;"></div>
 		<div id='show_all_title'>
 			<ul class='all_title'>
-				<li><div id='text_part1'>MANHATTAN<br/><span id='nb_text_part1'></span></div></li>
+				<li><div id='text_part1'>MANHATTAN<br/> <span id='nb_text_part1'></span></div></li>
 				<li><div id='text_part2'>BROOKLYN<br/><span id='nb_text_part2'></span></div></li>
 				<li><div id='text_part3'>QUEENS<br/><span id='nb_text_part3'></span></div></li>
 				<li><div id='text_part4'>THE BRONX<br/><span id='nb_text_part4'></span></div></li>
