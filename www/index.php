@@ -201,7 +201,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         			<li><a id='filter_weekend_ridership' href="javascript:show_most_vsited_stattions('weekend_ridership')">Weekends</a></li>
            		 	<li><a class='active' id='filter_MNH' href="javascript:show_most_vsited_stattions('MNH')" style="margin-left:50px;">Manhattan</a></li>
             		<li><a id='filter_BK' href="javascript:show_most_vsited_stattions('BK')">Brooklyn</a></li>
-                    <li><a id='filter_QNS 'href="javascript:show_most_vsited_stattions('QNS')">Queens</a></li>
+                    <li><a id='filter_QNS' href="javascript:show_most_vsited_stattions('QNS')">Queens</a></li>
                     <li><a id='filter_BX' href="javascript:show_most_vsited_stattions('BX')">The Bronx</a></li>
        			</ul>
             </div>

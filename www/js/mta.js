@@ -81,8 +81,10 @@ function display_graph(filter_week,filter_bor,start_) {
 				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + ", RIDERS");
 				nbriders_obj.attr({'text-anchor': 'start'});
 				nbriders_obj.attr({ "font-size": 13, "font-family": "BebasRegular" });
+				//alert(Raphael.getTotalLength(nbriders_obj));
 				nbriders_obj.hide();
 				arr_nbriders[circle.id] = nbriders_obj;
+			
 				
 				index_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('index_'));
 				index_obj.attr({'text-anchor': 'start'});
@@ -214,6 +216,7 @@ function show_most_vsited_stattions(key) {
 		filter_bor = key;
 	}
 	//console.log(filter_week + ' ' + filter_bor);
+	//console.log('#filter_' + key);
 	$('#filter_' + key).addClass('active');
 	display_graph(filter_week,filter_bor,start_);
 }
