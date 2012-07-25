@@ -31,7 +31,7 @@ var start_ = 0;
 function display_graph(filter_week,filter_bor,start_) {
 	var next_step;
 	$('#graph_result4').html('');
-	var paper_graph4 = Raphael("graph_result4", 660, 200);
+	var paper_graph4 = Raphael("graph_result4", 660, 300);
 	
 	var line = paper_graph4.path("M10 100L560 100");
 	line.attr({fill: '', stroke: '#1A263D', 'stroke-width': 3});
@@ -41,19 +41,47 @@ function display_graph(filter_week,filter_bor,start_) {
 	$.getJSON("xhr/get_most_visited_stations.php?field=" + filter_week + "&borough=" + filter_bor + "&start=" + start_,
 	function(data){
 		var nb_item = 0;
+		arr_nbriders = [];
+		arr_stations = [];
 		$.each(data, function(key, value){
 				var circle = paper_graph4.circle(x,y,value.radius);;
 				circle.attr("fill", "#76CDD3");
 				circle.data("station",value.station);
 				circle.data("nb",value.nb);
-				circle.click(function () {
-					alert(this.data("nb"));
-				});
+				circle.data("x",x);
+				//circle.data("y",x);
+				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + " RIDERS");
+				nbriders_obj.attr({'text-anchor': 'start'});
+				nbriders_obj.attr({ "font-size": 13, "font-family": "BebasRegular" });
+				nbriders_obj.hide();
+				arr_nbriders[circle.id] = nbriders_obj;
+				
+				station_obj = paper_graph4.text(x, y + 33, value.station);
+				station_obj.rotate(45); 
+				station_obj.attr({'text-anchor': 'start'});
+				station_obj.attr({"fill" : "#76CDD3","font-size": 13, "font-family": "BebasRegular" });
+				arr_stations[circle.id] = station_obj;
+				circle.node.onmouseover = function () {
+					r = arr_nbriders[circle.id];
+					s = arr_stations[circle.id];
+					s.attr({"fill" : "#000000"});
+					r.show();
+				}
+				circle.node.onmouseout = function () {
+					r = arr_nbriders[circle.id];
+					s = arr_stations[circle.id];
+					s.attr({"fill" : "#76CDD3"});
+					r.hide();
+				}
+			
 				x = x + 65;
-			//	('#nb_item').text(data.length);
+				
+				
 		});
+		//$('#nb_item').html(data.length);
 	
 	});
+		//alert($('#nb_item').html());
 
 		if (0) {
 			var arrow_right_off = ["graph_result4",31,22,{"stroke":"none","fill":"#24293D","type":"path","path":"M0,7c0-3.867,3.135-7,7-7h17c3.867,0,7,3.133,7,7v8c0,3.865-3.133,7-7,7H7c-3.865,0-7-3.135-7-7V7z"},{"stroke":"none","fill":"#343C56","type":"path","path":"M12,4.588 22.326,11.219 12,17.85 \tz"}];
@@ -285,17 +313,22 @@ window.onload = function () {
 			y_bulle = value.y - 140;
 			r.transform("t" + x_bulle + "," + y_bulle);
 			
-			var riders = paper.text(value.x + 45, value.y- 125, value.nb);
+			var riders = paper.text(value.x, value.y- 125, value.nb);
 			riders.attr({ "font-size": 17, "font-family": "BebasRegular" });
+			riders.attr({'text-anchor': 'start'});
 			riders.hide();
+			
+			//var line = paper.path("M" + value.x  + " " + value.y + "L40 " + value.y);
+			//line.attr({fill: '', stroke: '#1A263D', 'stroke-width': 3});
 			
 			var t = paper.text(value.x + 1, value.y- 85, value.text);
 			t.attr({ "font-size": 13, "font-family": "Lato" });
 			t.attr({'text-anchor': 'start'});
 			t.hide();
 			
-			var station = paper.text(value.x + 58, value.y- 35, value.station);
+			var station = paper.text(value.x , value.y- 35, value.station);
 			station.attr({"fill" : "#ffffff","font-size": 13, "font-family": "BebasRegular" });
+			station.attr({'text-anchor': 'start'});
 			station.hide();
 			
 			var circle = paper.circle(value.x,value.y, value.radius);

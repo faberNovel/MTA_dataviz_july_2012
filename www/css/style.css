@@ -712,7 +712,7 @@ ul.all_result_part1 {
 	border : 0px solid red;
 	width : 600px;
 	margin-left : 10px;
-	height : 200px;
+	height : 250px;
 }
 
 #result_container_part1 {
@@ -724,5 +724,5 @@ ul.all_result_part1 {
 }
 
 #nb_item {
-	display :none;
+
 }
