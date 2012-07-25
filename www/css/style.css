@@ -92,7 +92,7 @@ body{
 */
 
 header {
-	height:355px;
+	height:310px;
 	background-color:#abdee1;}
 	
 #header_wrapper{
@@ -227,7 +227,7 @@ header {
 #nav_wrapper{
 	background-color:#212d42;
 	/*padding:10px 0 10px 0;*/
-	height:77px;
+	height:35px;
 	margin:0 auto;
 	text-align:left;
 	}
@@ -239,7 +239,8 @@ header {
 	
 #nav table, #nav table tr, #nav table tr td{
 	font-family: 'BebasRegular';
-	font-size:17px;
+	font-size:13.5px;
+	word-spacing:3px;
 	margin:0;
 	padding:0;}
 	
@@ -251,8 +252,8 @@ header {
 	color:#75cdd2;
 	height:20px;
 	padding-top:7px;
-	padding-right:25px;
-	padding-left:25px;	
+	padding-right:10px;
+	padding-left:10px;	
 	padding-bottom: 7px;
 	border-left:1px solid #35586a;
 	/*-webkit-transition-property: background-color;
@@ -739,4 +740,8 @@ ul.all_result_part1 {
 
 #nb_item {
 
+}
+
+a#macsym.nyc-sub-7days {
+	margin-left : 100px;
 }

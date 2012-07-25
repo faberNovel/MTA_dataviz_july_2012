@@ -91,9 +91,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
 					<td class="nav_left_border"><a class='goto_part1'>The Boroughs Breakdown</a></td>
 					<td class="nav_left_border"><a class='goto_part4'>Most Visited Stations</a></td>
                		<td class="nav_left_border"><a class='goto_part5'>Who Goes Where</a></td>
-				</tr>
-				<tr>
-           			<td class="nav_left_border"><a class='goto_part2'>A Snapshot of New Years' Eve</a></td>
+					<!--<td class="nav_left_border"><a class='goto_part2'>A Snapshot of New Years' Eve</a></td>-->
 					<td class="nav_left_border"><a class='goto_part3'>Student Riders</a></td>
 					<td class="nav_left_border"><a class='goto_part6'>About</a></td>
 				</tr>
@@ -232,7 +230,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
             	<ul class="layerswitch">
       				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>
       				<li><a id="macsym.nyc-sub-sen-dis" href="#">Senior citizen / Disabled</a></li>
-      				<li><a id="macsym.nyc-sub-7days" href="#">7-Days</a></li>
+      				<li><a style="margin-left:235px;" id="macsym.nyc-sub-7days" href="#">7-Days</a></li>
      				<li><a id="macsym.nyc-sub-30days" href="#">30-Days</a></li>
    				</ul>
             </div>
