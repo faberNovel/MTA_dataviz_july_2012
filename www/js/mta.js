@@ -370,14 +370,25 @@ function get_data(s) {
 	$('#' + s).addClass('active');
 	$.getJSON("xhr/get_ridership.php?s=" + s,
 	function(data){
-		display_graph1(data[0].nb1);
-		display_graph2(data[1].nb2);
-		display_graph3(data[2].nb3);
-		display_graph4(data[3].nb4);
-		$('#nb_text_part1').html(Math.ceil(data[0].nb1));
-		$('#nb_text_part2').html(Math.ceil(data[1].nb2));
-		$('#nb_text_part3').html(Math.ceil(data[2].nb3));
-		$('#nb_text_part4').html(Math.ceil(data[3].nb4));
+		nb1 = Math.ceil(data[0].nb1);
+		nb2 = Math.ceil(data[1].nb2);
+		nb3 = Math.ceil(data[2].nb3);
+		nb4 = Math.ceil(data[3].nb4);
+		
+		display_graph1(nb1);
+		display_graph2(nb2);
+		display_graph3(nb3);
+		display_graph4(nb4);
+		if (s == 'annual_ridership' || s == 'weekdays_ridership' || s == 'weekend_ridership') {
+			nb1 = nb1 + '%';
+			nb2 = nb2 + '%';
+			nb3 = nb3 + '%';
+			nb4 = nb4 + '%';
+		}
+		$('#nb_text_part1').html(nb1);
+		$('#nb_text_part2').html(nb2);
+		$('#nb_text_part3').html(nb3);
+		$('#nb_text_part4').html(nb4);
 		
 	});
 }
