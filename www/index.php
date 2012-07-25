@@ -41,9 +41,9 @@
     	<div id="title">
     		<h1>1.6  billion  rides</h1>
         	<a href="#" class="pinterest_bt" ><img src="img/pinterest_icon.png" alt="pinterest"/></a>
-         	<a href="https://twitter.com/share?url=http://facebook.com&text=djsqhdsq&via=fabernovel&related=fabernovel" data-lang="en" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
+         	<a href="https://twitter.com/share?url=http://data.fabernovel.com/nyc-subway/&text=MTA&via=fabernovel&related=fabernovel" data-lang="en" target='_blank' class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
 
-         	<a href="#" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
+         	<a href="http://www.facebook.com/sharer.php?u=http://data.fabernovel.com/nyc-subway/" target='_blank' class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
             <div style="clear:both;"></div>	
         	<h2>A story of NYC subways, big data and YOU!</h2>
         	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
@@ -259,8 +259,8 @@
     		<a id="fabernovel" href="http://www.fabernovel.com/"><img src="img/faber_logo_blue.png" alt="faberNovel, ideas with legs" /></a>
   			<div class="tools">
   				<a href="#" id="pinterest_bt_footer" class="pinterest_bt"><img src="img/pinterest_icon.png" alt="pinterest"/></a>
-         		<a href="#" id="twitter_bt_footer" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
-         		<a href="#" id="facebook_bt_footer" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
+         		<a href="https://twitter.com/share?url=http://data.fabernovel.com/nyc-subway/&text=MTA&via=fabernovel&related=fabernovel" data-lang="en" target='_blank' id="twitter_bt_footer" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
+         		<a href="http://www.facebook.com/sharer.php?u=http://data.fabernovel.com/nyc-subway/" target='_blank' id="facebook_bt_footer" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
     		</div>
         </div>
         <div style="clear:both;"></div>
