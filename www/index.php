@@ -36,6 +36,7 @@ $b_station = false;
 
 if (isset($_GET['station']) && (!empty($_GET['station']))) {
 	$b_station = true;
+	$station = $_GET['station'];
 	require_once "xhr/config.php";
 	$station = urldecode($_GET['station']);
 	//echo $station;
@@ -70,7 +71,12 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
             </p>
             <form method="" >
-    			<input id="searchinputbox" type="text" value="What's your station ?" maxlength="255" size="12" alt="searchinputbox" name="station">
+				<?php if ($b_station) {
+					$text = $station;
+				} else {
+					$text = 'What\'s your station ?';
+				}?>
+    			<input id="searchinputbox" type="text" value="<?php echo $text;?>" maxlength="255" size="12" alt="searchinputbox" name="station">
            	 	<input id="searchbutton" type="submit" style="padding: 1px 8px;" value="" name="">
                 <div style="clear:both;"></div>	
        		</form>
@@ -106,21 +112,21 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
             <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
+					<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
 					<li><a id='annual_ridership' href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
            		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Weekdays ridership</a></li>
             		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Weekends ridership</a></li>
-            		<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
-       			</ul>
+            	</ul>
             </div>
             
         </div>
  		<div style="clear:both;"></div>
 		<div id='show_all_title'>
 			<ul class='all_title'>
-				<li><div id='text_part1'>MANHATTAN</div></li>
-				<li><div id='text_part2'>BROOKLYN</div></li>
-				<li><div id='text_part3'>QUEENS</div></li>
-				<li><div id='text_part4'>THE BRONX</div></li>
+				<li><div id='text_part1'>MANHATTAN<br/><span id='nb_text_part1'></span></div></li>
+				<li><div id='text_part2'>BROOKLYN<br/><span id='nb_text_part2'></span></div></li>
+				<li><div id='text_part3'>QUEENS<br/><span id='nb_text_part3'></span></div></li>
+				<li><div id='text_part4'>THE BRONX<br/><span id='nb_text_part4'></span></div></li>
 			</ul>
 		</div>
 		  <div style="clear:both;"></div>
@@ -211,14 +217,14 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         </div>
         <div class="content">
         	<h3 class="part_title">Who goes where</h3>
-            <div class="legend">Where do students go versus those with senior/disabled passes?  Where do 7-day pass users go versus 30-day pass users?  It's interesting to plot the differences: <a href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a></div>
+            <div class="legend">Where do students go versus those with senior/disabled passes?  Where do 7-day pass users go versus 30-day pass users?  It's interesting to plot the differences: </div>
 			<ul class='part5_legend'>
 				<li>Student passes: ages 5 - 18</li>
 				<li>*Senior/disabled passes: age 65 and above + disabled</li>
 				<li>*7-day pass: average age: 40, median income: $38k</li>
 				<li>*30-day pass: average age: 38, median income: $63k</li>
-				(Source)
 			</ul>
+			<a href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a>
             <div class="filters">
             	<ul class="layerswitch">
       				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>

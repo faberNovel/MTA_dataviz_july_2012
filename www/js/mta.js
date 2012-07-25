@@ -40,7 +40,7 @@ $(document).ready(function() {
 	
 	show_most_vsited_stattions('MNH');
 	if (current_bo == '') {
-		get_data('annual_ridership');
+		get_data('number_of_stations');
 	}else {
 		get_data('number_of_stations');
 	}
@@ -210,6 +210,16 @@ function display_graph1(nb1) {
 	var paper1 = Raphael("result_part1",x_svg, 300);
 	startx = nb_start_x;
 	starty = nb_start_y;
+	
+	var circle1  = paper1.circle(5,5, circle_radius);
+	if (current_bo == 'MNH') {
+		circle1.attr("fill", "#1A263D");
+	}
+	else {
+		circle1.attr("fill", "#76CDD3");
+	}
+	circle1.attr('stroke-width',0);
+	circle1.attr('stroke','#76CDD3')
 
 	for (i=1; i<nb1; i++)
 	{
@@ -232,6 +242,7 @@ function display_graph1(nb1) {
 		}
 		circle1.attr('stroke-width',0);
 		circle1.attr('stroke','#76CDD3')
+		
     }
  }
 
@@ -239,6 +250,15 @@ function display_graph1(nb1) {
 	var paper2 = Raphael("result_part2",x_svg, 300);
 	startx = nb_start_x;
 	starty = nb_start_y;
+	var circle1  = paper2.circle(5,5, circle_radius);
+	if (current_bo == 'BK') {
+		circle1.attr("fill", "#1A263D");
+	}
+	else {
+		circle1.attr("fill", "#76CDD3");
+	}
+	circle1.attr('stroke-width',0);
+	circle1.attr('stroke','#76CDD3')
 	for (i=1; i<nb; i++)
 	{
 		x = startx;
@@ -268,6 +288,15 @@ function display_graph1(nb1) {
 
 	startx = nb_start_x;
 	starty = nb_start_y;
+	var circle1  = paper3.circle(5,5, circle_radius);
+	if (current_bo == 'QNS') {
+		circle1.attr("fill", "#1A263D");
+	}
+	else {
+		circle1.attr("fill", "#76CDD3");
+	}
+	circle1.attr('stroke-width',0);
+	circle1.attr('stroke','#76CDD3')
 	for (i=1; i<nb; i++)
 	{
 		x = startx;
@@ -296,6 +325,15 @@ function display_graph4(nb) {
 	var paper4 = Raphael("result_part4",x_svg, 300);
 	startx = nb_start_x;
 	starty = nb_start_y;
+	var circle1  = paper4.circle(5,5, circle_radius);
+	if (current_bo == 'BX') {
+		circle1.attr("fill", "#1A263D");
+	}
+	else {
+		circle1.attr("fill", "#76CDD3");
+	}
+	circle1.attr('stroke-width',0);
+	circle1.attr('stroke','#76CDD3')
 	for (i=1; i<nb; i++)
 	{
 		x = startx;
@@ -336,6 +374,10 @@ function get_data(s) {
 		display_graph2(data[1].nb2);
 		display_graph3(data[2].nb3);
 		display_graph4(data[3].nb4);
+		$('#nb_text_part1').html(Math.ceil(data[0].nb1));
+		$('#nb_text_part2').html(Math.ceil(data[1].nb2));
+		$('#nb_text_part3').html(Math.ceil(data[2].nb3));
+		$('#nb_text_part4').html(Math.ceil(data[3].nb4));
 		
 	});
 }
