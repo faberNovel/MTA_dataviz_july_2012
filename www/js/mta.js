@@ -304,29 +304,38 @@ window.onload = function () {
 		arr_riders = [];
 		all_station = [];
 		arr_station = [];
+		all_line = [];
+		arr_line = [];
 		
 		$.each(circles, function(key, value){
 			var infobulle =[value.x,value.y,{"stroke":"none","fill":"#76CDD3","type":"path","path":"M8.586,119.5H6c-2.757,0-5-2.243-5-5V6.5C1,3.898,3.053,1,6,1h129c2.757,0,5,2.243,5,5v108.5 c0,2.757-2.243,5-5,5H23.416l-7.415,7.414L8.586,119.5z"},{"stroke":"none","fill":"#FFFFFF","type":"path","path":"M135,2c2.209,0,4,1.791,4,4v108.5c0,2.209-1.791,4-4,4H23.002l-7.001,7L9,118.5H6c-2.209,0-4-1.791-4-4 V6.5C2,4.291,3.791,2,6,2H135 M135,0H6C2.804,0,0,3.038,0,6.5v108c0,3.309,2.691,6,6,6h2.172l6.415,6.414l1.414,1.414 l1.414-1.414l6.415-6.414H135c3.309,0,6-2.691,6-6V6C141,2.691,138.309,0,135,0L135,0z"},{"stroke":"#FFFFFF","stroke-width":2,"fill":"none","type":"path","path":"M2 90.5L139 90.5"}];
 			var r = paper.add(infobulle);
 			r.hide();
-			x_bulle = value.x - 10;
+			x_bulle = value.x - 15;
 			y_bulle = value.y - 140;
 			r.transform("t" + x_bulle + "," + y_bulle);
 			
-			var riders = paper.text(value.x, value.y- 125, value.nb);
+			var riders = paper.text(value.x - 5, value.y- 125, value.nb);
 			riders.attr({ "font-size": 17, "font-family": "BebasRegular" });
 			riders.attr({'text-anchor': 'start'});
 			riders.hide();
 			
-			//var line = paper.path("M" + value.x  + " " + value.y + "L40 " + value.y);
-			//line.attr({fill: '', stroke: '#1A263D', 'stroke-width': 3});
+			start_line_x = value.x - 5;
+			start_line_y = value.y - 112;
+			end_line = start_line_x + 90;
+
+			var line = paper.path("M" +  start_line_x + " " + start_line_y + "L" + end_line  + " " + start_line_y);
+				//var line = paper_graph4.path("M10 100L560 100");
+			line.attr({fill: '', stroke: '#000000', 'stroke-width': 1});
+			line.hide();
 			
-			var t = paper.text(value.x + 1, value.y- 85, value.text);
+		
+			var t = paper.text(value.x - 5, value.y- 84, value.text);
 			t.attr({ "font-size": 13, "font-family": "Lato" });
 			t.attr({'text-anchor': 'start'});
 			t.hide();
 			
-			var station = paper.text(value.x , value.y- 35, value.station);
+			var station = paper.text(value.x - 5, value.y- 35, value.station);
 			station.attr({"fill" : "#ffffff","font-size": 13, "font-family": "BebasRegular" });
 			station.attr({'text-anchor': 'start'});
 			station.hide();
@@ -337,6 +346,9 @@ window.onload = function () {
 			
 			arr[circle.id] = r;
 			arr_visible[circle.id] = false;
+			
+			all_line[circle.id] = line ;
+			arr_line[circle.id] = false;
 			
 			all_riders[circle.id] = riders;
 			arr_riders[circle.id] = false;
@@ -355,17 +367,20 @@ window.onload = function () {
 					var r = all_riders[x];
 					var s = all_station[x];
 					var t = all_text[x];
+					var l = all_line[x];
 					arr_visible[x] = false;
 					b.hide();
 					r.hide();
 					s.hide();
 					t.hide();
+					l.hide();
 				}
 				arr_visible[circle.id] = !arr_visible[circle.id];
 				var b = arr[circle.id];
 				var r = all_riders[circle.id];
 				var s = all_station[circle.id];
 				var t = all_text[circle.id];
+				var l = all_line[circle.id];
 				if (arr_visible[circle.id]) {
 					b.show();
 					b.toFront();
@@ -375,6 +390,8 @@ window.onload = function () {
 					s.toFront();
 					t.show();
 					t.toFront();
+					l.show();
+					l.toFront();
 				}else {
 					b.hide();
 					b.toBack();
@@ -384,6 +401,8 @@ window.onload = function () {
 					s.toFront();
 					t.hide();
 					t.toFront();
+					l.hide();
+					l.toFront();
 				}
 			};
 			
@@ -395,11 +414,13 @@ window.onload = function () {
 					var r = all_riders[x];
 					var s = all_station[x];
 					var t = all_text[x];
+					var l = all_line[x];
 					arr_visible[x] = false;
 					b.hide();
 					r.hide();
 					s.hide();
 					t.hide();
+					l.hide();
 				}
 			};
 		
