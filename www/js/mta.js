@@ -400,14 +400,14 @@ window.onload = function () {
 		paper.add(mapdata);
 		var circles = [
 			{"id":1,"x":84,"y":398,"radius":7,"station": "14 St-Union Square","text" : "The cool place \nto hang out for \nany high-schooler","nb":"20986, RIDERS"},
-			{"id":2,"x":100,"y":324,"radius":7,"station": "59 St Columbus Circle","text" : "","nb":"17596, RIDERS"},
-			{"id":3,"x":99,"y":498,"radius":7,"station": "DeKalb Av","text" : "","nb":"14272, RIDERS"},
+			{"id":2,"x":100,"y":324,"radius":7,"station": "59 St Columbus Circle","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"17596, RIDERS"},
+			{"id":3,"x":99,"y":498,"radius":7,"station": "DeKalb Av","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"14272, RIDERS"},
 			{"id":4,"x":107,"y":513,"radius":7,"station": "Atlantic Av","text" : "A massive transit \n station in Brooklyn \nand the Atlantic Mall","nb":"14062, RIDERS"},
 			{"id":5,"x":185,"y":377,"radius":7,"station": "33 St-Rawson St","text" : "Near LaGuardia \nCommunity College","nb":"13573, RIDERS"},
 			{"id":6,"x":357,"y":347,"radius":7,"station": "Flushing-Main St","text" : "Suburbians catch \ntheir first 7th train \nat this station","nb":"13447, RIDERS"},
-			{"id":7,"x":99,"y":310,"radius":7,"station": "66 St Lincoln Center","text" : "","nb":"13192, RIDERS"},
+			{"id":7,"x":99,"y":310,"radius":7,"station": "66 St Lincoln Center","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"13192, RIDERS"},
 			{"id":8,"x":89,"y":435,"radius":7,"station": "Essex St-Delancey St","text" : "The other cool \nplace to hang out \nfor any high-schooler","nb":"13126, RIDERS"},
-			{"id":9,"x":64,"y":387,"radius":7,"station": "8 Av-14 St","text" : "","nb":"12792, RIDERS"},
+			{"id":9,"x":64,"y":387,"radius":7,"station": "8 Av-14 St","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"12792, RIDERS"},
 			{"id":10,"x":90,"y":490,"radius":7,"station": "Jay St MetroTech","text" : "Fulton Street Mall \nnearby with its \ndiscount stores","nb":"11719, RIDERS"}
 		]
 		arr = [];
@@ -445,7 +445,7 @@ window.onload = function () {
 			
 		
 			var t = paper.text(value.x - 5, value.y- 84, value.text);
-			t.attr({ "font-size": 13, "font-family": "Lato" });
+			t.attr({ "font-size": 12.5, "font-family": "Lato" });
 			t.attr({'text-anchor': 'start'});
 			t.hide();
 			
