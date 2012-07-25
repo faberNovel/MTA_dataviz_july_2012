@@ -60,14 +60,14 @@
     	<div id="nav">
         	<table>
 				<tr class="nav_bottom_border">
-					<td class="nav_left_border"><a class='test'>The Boroughs Breakdown</a></td>
-					<td class="nav_left_border"><a href="#part4">Most Visited Stations</a></td>
-               		<td class="nav_left_border"><a href="#part5">Who Goes Where</a></td>
+					<td class="nav_left_border"><a class='goto_part1'>The Boroughs Breakdown</a></td>
+					<td class="nav_left_border"><a class='goto_part4'>Most Visited Stations</a></td>
+               		<td class="nav_left_border"><a class='goto_part5'>Who Goes Where</a></td>
 				</tr>
 				<tr>
-           			<td class="nav_left_border"><a href="#part2">A Snapshot of New Years' Eve</a></td>
-					<td class="nav_left_border"><a href="#part3">Student Riders</a></td>
-					<td class="nav_left_border"><a href="#part6">About</a></td>
+           			<td class="nav_left_border"><a class='goto_part2'>A Snapshot of New Years' Eve</a></td>
+					<td class="nav_left_border"><a class='goto_part3'>Student Riders</a></td>
+					<td class="nav_left_border"><a class='goto_part6'>About</a></td>
 				</tr>
 			</table>
         </div>

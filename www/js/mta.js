@@ -16,8 +16,24 @@ $(document).ready(function() {
 			selectFirst: false
 	});
 	
-	$('a.test').click(function(){
+	$('a.goto_part1').click(function(){
 			$.scrollTo(325, 700);
+	});
+	
+	$('a.goto_part2').click(function(){
+			$.scrollTo(500, 700);
+	});
+	
+	$('a.goto_part3').click(function(){
+			$.scrollTo(882, 700);
+	});
+	
+	$('a.goto_part4').click(function(){
+			$.scrollTo(1977, 700);
+	});
+	
+	$('a.goto_part5').click(function(){
+			$.scrollTo(2434, 700);
 	});
 	
 	show_most_vsited_stattions('MNH');
