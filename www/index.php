@@ -40,7 +40,8 @@
   	<div id="header_wrapper">
     	<div id="title">
     		<h1>1.6  billion  rides</h1>
-        	<a href="#" class="pinterest_bt" ><img src="img/pinterest_icon.png" alt="pinterest"/></a>
+        	
+	<a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());' class="pinterest_bt"><img src='img/pinterest_icon.png' alt="pinterest"/></a>
          	<a href="https://twitter.com/share?url=http://data.fabernovel.com/nyc-subway/&text=MTA&via=fabernovel&related=fabernovel" data-lang="en" target='_blank' class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
 
          	<a href="http://www.facebook.com/sharer.php?u=http://data.fabernovel.com/nyc-subway/" target='_blank' class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
@@ -258,9 +259,10 @@
     	<div id="links_wrapper">
     		<a id="fabernovel" href="http://www.fabernovel.com/"><img src="img/faber_logo_blue.png" alt="faberNovel, ideas with legs" /></a>
   			<div class="tools">
-  				<a href="#" id="pinterest_bt_footer" class="pinterest_bt"><img src="img/pinterest_icon.png" alt="pinterest"/></a>
-         		<a href="https://twitter.com/share?url=http://data.fabernovel.com/nyc-subway/&text=MTA&via=fabernovel&related=fabernovel" data-lang="en" target='_blank' id="twitter_bt_footer" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
+	<a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());' id="pinterest_bt_footer" class="pinterest_bt" id="pinterest_bt_footer"><img src='img/pinterest_icon.png' alt="pinterest"/></a>
+  				<a href="https://twitter.com/share?url=http://data.fabernovel.com/nyc-subway/&text=MTA&via=fabernovel&related=fabernovel" data-lang="en" target='_blank' id="twitter_bt_footer" class="twitter_bt"><img src="img/twitter_icon.png" alt="twitter"/></a>
          		<a href="http://www.facebook.com/sharer.php?u=http://data.fabernovel.com/nyc-subway/" target='_blank' id="facebook_bt_footer" class="facebook_bt"><img src="img/facebook_icon.png" alt="facebook"/></a>
+
     		</div>
         </div>
         <div style="clear:both;"></div>
