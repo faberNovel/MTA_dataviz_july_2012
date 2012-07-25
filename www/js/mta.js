@@ -68,6 +68,7 @@ function display_graph(filter_week,filter_bor,start_) {
 		arr_lines = [];
 		arr_index = [];
 		if (start_ == 0) index_ = 1;
+		if (start_ != 0) index_ = start_ + 1;
 	
 		$.each(data, function(key, value){
 				var circle = paper_graph4.circle(x,y,value.radius);;
