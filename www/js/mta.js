@@ -31,7 +31,7 @@ $(document).ready(function() {
 	});
 	
 	$('a.goto_part5').click(function(){
-			$.scrollTo(2330, 700);
+			$.scrollTo(2333, 700);
 	});
 	
 	$('a.goto_part6').click(function(){
@@ -394,20 +394,20 @@ function get_data(s) {
 	$('#' + s).addClass('active');
 	$.getJSON("xhr/get_ridership.php?s=" + s,
 	function(data){
-		nb1 = Math.ceil(data[0].nb1);
-		nb2 = Math.ceil(data[1].nb2);
-		nb3 = Math.ceil(data[2].nb3);
-		nb4 = Math.ceil(data[3].nb4);
+		nb1 = parseFloat (data[0].nb1);
+		nb2 = parseFloat (data[1].nb2);
+		nb3 = parseFloat (data[2].nb3);
+		nb4 = parseFloat (data[3].nb4);
 		
 		display_graph1(nb1);
 		display_graph2(nb2);
 		display_graph3(nb3);
 		display_graph4(nb4);
 		if (s == 'annual_ridership' || s == 'weekdays_ridership' || s == 'weekend_ridership') {
-			nb1 = nb1 + '%';
-			nb2 = nb2 + '%';
-			nb3 = nb3 + '%';
-			nb4 = nb4 + '%';
+			nb1 = nb1.toFixed(1) + '%';
+			nb2 = nb2.toFixed(1) + '%';
+			nb3 = nb3.toFixed(1) + '%';
+			nb4 = nb4.toFixed(1) + '%';
 		}
 		$('#nb_text_part1').html(nb1);
 		$('#nb_text_part2').html(nb2);
@@ -429,7 +429,7 @@ window.onload = function () {
 			{"id":2,"x":100,"y":264,"radius":7,"station": "59 St Columbus Circle","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"17,596 RIDERS"},
 			{"id":3,"x":99,"y":438,"radius":7,"station": "DeKalb Av","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"14,272 RIDERS"},
 			{"id":4,"x":107,"y":453,"radius":7,"station": "Atlantic Av","text" : "A massive transit \n station in Brooklyn \nand the Atlantic Mall","nb":"14,062 RIDERS"},
-			{"id":5,"x":185,"y":417,"radius":7,"station": "33 St-Rawson St","text" : "Near LaGuardia \nCommunity College","nb":"13573, RIDERS"},
+			{"id":5,"x":185,"y":300,"radius":7,"station": "33 St-Rawson St","text" : "Near LaGuardia \nCommunity College","nb":"13573 RIDERS"},
 			{"id":6,"x":357,"y":287,"radius":7,"station": "Flushing-Main St","text" : "Suburbanites catch \ntheir first 7th train \nat this station","nb":"13,447 RIDERS"},
 			{"id":7,"x":99,"y":250,"radius":7,"station": "66 St Lincoln Center","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"13,192 RIDERS"},
 			{"id":8,"x":89,"y":365,"radius":7,"station": "Essex St-Delancey St","text" : "The other cool \nplace to hang out \nfor any high-schooler","nb":"13,126 RIDERS"},
