@@ -27,11 +27,11 @@ $(document).ready(function() {
 	});
 	
 	$('a.goto_part4').click(function(){
-			$.scrollTo(2000, 700);
+			$.scrollTo(1820, 700);
 	});
 	
 	$('a.goto_part5').click(function(){
-			$.scrollTo(2460, 700);
+			$.scrollTo(2300, 700);
 	});
 	
 	$('a.goto_part6').click(function(){
