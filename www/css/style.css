@@ -772,3 +772,22 @@ span.legendsource {
 	font-size : 12px;
 	margin-left : 5px;
 }
+
+.wax-tooltip {
+	  	top: 40px;
+	    right: 40px;
+		margin-left : 450px;
+		left: auto;
+	    background: #51586f;
+	    -moz-border-radius: 7px;
+		border-radius: 7px;
+}
+
+.wax-tooltip .close {
+display: block;
+color : #ffffff;
+position: absolute;
+top: 10px;
+left : 100px;
+right: 20px;
+}
