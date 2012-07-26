@@ -322,7 +322,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
     </div>
     <div style="clear:both;"></div>
 
-    <p id="copyright">© 2012 - <a target='_blank' href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons</a> &nbsp;fabernovel</p>
+    <p id="copyright">2012 - <a target='_blank' href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons</a> &nbsp;fabernovel</p>
   </footer>
  <script src="js/plugins.js"></script>
   <script src="js/mta.js"></script>
