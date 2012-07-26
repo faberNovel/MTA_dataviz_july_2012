@@ -18,20 +18,16 @@ $(document).ready(function() {
 			$.scrollTo(310, 700);
 	});
 	
-	$('a.goto_part2').click(function(){
-			$.scrollTo(505, 700);
-	});
-	
 	$('a.goto_part3').click(function(){
-			$.scrollTo(890, 700);
+			$.scrollTo(840, 700);
 	});
 	
 	$('a.goto_part4').click(function(){
-			$.scrollTo(1860, 700);
+			$.scrollTo(1800, 700);
 	});
 	
 	$('a.goto_part5').click(function(){
-			$.scrollTo(2333, 700);
+			$.scrollTo(2260, 700);
 	});
 	
 	$('a.goto_part6').click(function(){
@@ -231,7 +227,7 @@ var nb1;
 var all_nb;
 
 function display_graph1(nb1) {
-	var paper1 = Raphael("result_part1",x_svg, 300);
+	var paper1 = Raphael("result_part1",x_svg, 250);
 	startx = nb_start_x;
 	starty = nb_start_y;
 	
@@ -271,7 +267,7 @@ function display_graph1(nb1) {
  }
 
  function display_graph2(nb) {
-	var paper2 = Raphael("result_part2",x_svg, 300);
+	var paper2 = Raphael("result_part2",x_svg, 250);
 	startx = nb_start_x;
 	starty = nb_start_y;
 	var circle1  = paper2.circle(5,5, circle_radius);
@@ -308,7 +304,7 @@ function display_graph1(nb1) {
 }
 
  function display_graph3(nb) {
-	var paper3 = Raphael("result_part3",x_svg, 300);
+	var paper3 = Raphael("result_part3",x_svg, 250);
 
 	startx = nb_start_x;
 	starty = nb_start_y;
@@ -346,7 +342,7 @@ function display_graph1(nb1) {
 }
 
 function display_graph4(nb) {
-	var paper4 = Raphael("result_part4",x_svg, 300);
+	var paper4 = Raphael("result_part4",x_svg, 250);
 	startx = nb_start_x;
 	starty = nb_start_y;
 	var circle1  = paper4.circle(5,5, circle_radius);
