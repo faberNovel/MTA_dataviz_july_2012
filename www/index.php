@@ -111,7 +111,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         </div>
         <div class="content">
         	<h3 class="part_title">The Boroughs Breakdown</h3>
-            <div class="legend">How do all of these numbers break down between the boroughs? Which has the most riders weekdays and weekends? With the MTA data it's easy to see...</div>
+            <div class="legend">How do all of these numbers break down between the boroughs? Which one has the most riders on weekdays? on weekends? With the MTA data it's easy to see...</div>
         	<div class="filters">
             	<ul>
 					<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
@@ -175,7 +175,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         </div>
         <div class="content">
         	<h3 class="part_title">Student Riders</h3>
-            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. It's easy to figure out where kids with student MetroCards go - they go to the schools. But where else? We decided to take a look. Below is a snapshot of the top ten subway stops where Student cards were used from March 3-9, 2012.</div>
+            <div class="legend">Student MetroCards are distributed by schools to eligible students from kindergarten through twelfth grade. It's easy to figure out where kids with student MetroCards go to - they go to school. But where else? We decided to take a look. Below is a snapshot of the top ten subway stops where Student cards were used from March 3-9, 2012.</div>
 
 			<div id="map"></div>
 			<div id="mailbox">
@@ -219,7 +219,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         </div>
         <div class="content">
         	<h3 class="part_title">Who goes where</h3>
-            <div class="legend">Where do students go versus those with senior/disabled passes? Where do 7-day pass users go versus 30-day pass users?  We took a look to see what we would find. This is for from March 17-23, 2012.</div>
+            <div class="legend">Where do students go versus people with senior/disabled passes? Where do 7-day pass users go versus 30-day pass users?  We took a look to see what we would find. This is for from March 17-23, 2012.</div>
 			<ul class='part5_legend'>
 				<li>Student passes: ages 5 - 18</li>
 				<li>Senior/disabled passes: age 65 and above + disabled</li>
