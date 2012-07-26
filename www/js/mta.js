@@ -38,7 +38,7 @@ $(document).ready(function() {
 			$.scrollTo(3323, 700);
 	});
 	
-	show_most_vsited_stattions('MNH');
+	show_most_vsited_stattions('MNH',0);
 	if (current_bo == '') {
 		get_data('number_of_stations');
 	}else {
@@ -46,7 +46,7 @@ $(document).ready(function() {
 	}
 });
 
-var start_ = 0;
+//var start_ = 0;
 //var next_step;
 
 
@@ -176,7 +176,7 @@ function pager_most_visited_station(act) {
 	if (act == 'prev') {
 		start_ = start_ - 8;
 	}
-	console.log('start  =>' + start_);
+//	console.log('start  =>' + start_);
 	
 	filter_bor = '';
 	filter_week = '';
@@ -196,7 +196,7 @@ function show_most_vsited_stattions(key) {
 
 	var filter_week = '';
 	var filter_bor = '';
-	var start_ = 0;
+	start_ = 0;
 
 	if (key == 'weekday_ridership' || key == 'weekend_ridership') {
 		$('#filter_weekday_ridership').removeClass('active');
@@ -217,7 +217,7 @@ function show_most_vsited_stattions(key) {
 		filter_bor = key;
 	}
 	//console.log(filter_week + ' ' + filter_bor);
-	console.log('start_ from begin : ' + start_);
+//	console.log('start_ from begin : ' + start_);
 	$('#filter_' + key).addClass('active');
 	display_graph(filter_week,filter_bor,start_);
 }
