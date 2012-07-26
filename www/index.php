@@ -303,7 +303,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         <div class="content">
         	<div id="about">
         		<h3>About</h3>
-            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at data@fabernovel.com. <br/>Follow us on <a target='_blank' href="http://twitter.com/fabernovel">twitter</a>.<br/>Sign up to our <a target='_blank' href="http://www.fabernovel.com/en/newsletter">newsletter</a>.</div>
+            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at <a href="mailto:data@fabernovel.com">data@fabernovel.com</a>. <br/>Follow us on <a target='_blank' href="http://twitter.com/fabernovel">twitter</a>.<br/>Sign up to our <a target='_blank' href="http://www.fabernovel.com/en/newsletter">newsletter</a>.</div>
             </div>
             <div id="poster">
             	<img alt="poster snapshot" src="img/poster.jpg" />
@@ -321,7 +321,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
     </div>
     <div style="clear:both;"></div>
 
-    <p id="copyright">2012 - <a target='_blank' href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons</a> &nbsp;fabernovel</p>
+    <p id="copyright">2012 - <a target='_blank' href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons</a> &nbsp;faberNovel</p>
   </footer>
  <script src="js/plugins.js"></script>
   <script src="js/mta.js"></script>
