@@ -33,7 +33,7 @@
   <link href='wax/theme/controls.css' rel='stylesheet' type='text/css' />
 <?php
 $b_station = false;
-$text_tweet = urlencode("[Data visualization] Go underground, explore the MTA #data and learn about #NYC http://data.fabernovel.com/nyc-subway/ by @fabernovel");
+$text_tweet = urlencode("[Data visualization] Go underground, explore the MTA #data and learn about #NYC subway http://data.fabernovel.com/nyc-subway/ by @fabernovel");
 
 if (isset($_GET['station']) && (!empty($_GET['station']))) {
 	$b_station = true;
@@ -71,6 +71,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         	<h2>A story of NYC subways, big data and YOU!</h2>
         	<p>In 2011, New York City's subways were ridden 1.6 billion times, generating billions of data points, all available to the public at <a target='_blank' href="http://www.mta.info/developers/">mta.info</a>. So what kinds of insights about NYC can be gleaned from that data?  faberNovel decided to find out...
             </p>
+			<?php if(0) {?>
             <form method="" >
 				<?php if ($b_station) {
 					$text = $station;
@@ -81,6 +82,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
            	 	<input id="searchbutton" type="submit" style="padding: 1px 8px;" value="" name="">
                 <div style="clear:both;"></div>	
        		</form>
+			<?php } ?>
     	</div>
     </div>
     

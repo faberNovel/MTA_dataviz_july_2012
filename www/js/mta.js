@@ -79,7 +79,7 @@ function display_graph(filter_week,filter_bor,start_) {
 				circle.data("x",x);
 				//alert(index_);
 				//circle.data("y",x);
-				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + ", RIDERS");
+				nbriders_obj = paper_graph4.text(circle.data('x') - 10, 50,circle.data('nb') + " RIDERS");
 				nbriders_obj.attr({'text-anchor': 'start'});
 				nbriders_obj.attr({ "font-size": 13, "font-family": "BebasRegular" });
 				//alert(Raphael.getTotalLength(nbriders_obj));
