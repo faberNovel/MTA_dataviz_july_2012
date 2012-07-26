@@ -752,10 +752,23 @@ p#copyright a {
 	color : #76CDD3;
 }
 
+div.legend a {
+	color:#76CDD3;
+}
+
+div.legend a:hover {
+	color:#76CDD3;
+}
+
 p#copyright a:hover{
 	color:#76CDD3;
 }
 
 a#macsym.nyc-sub-7days {
 	margin-left : 100px;
+}
+
+span.legendsource {
+	font-size : 12px;
+	margin-left : 5px;
 }

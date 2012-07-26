@@ -226,7 +226,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
 				<li>7-day pass: average age: 40, median income: $38k</li>
 				<li>30-day pass: average age: 38, median income: $63k</li>
 			</ul>
-			<a class='legendsource' target='_blank' href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a>
+			<a class='legendsource' target='_blank' href="http://www.streetsblog.org/2010/10/20/who-buys-which-type-of-metrocard/">(source)</a><span class='legendsource'>Students/Senior citizen and 7-days/30days are on differente scales.</span>
             <div class="filters">
             	<ul class="layerswitch">
       				<li><a id="macsym.nyc-sub-students" class="active" href="#">Students</a></li>
@@ -304,7 +304,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         <div class="content">
         	<div id="about">
         		<h3>About</h3>
-            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at data@fabernovel.com.</div>
+            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at data@fabernovel.com. <br/>Follow us on <a target='_blank' href="http://twitter.com/fabernovel">twitter</a>.<br/>Sign up to our <a target='_blank' href="http://www.fabernovel.com/en/newsletter">newsletter</a>.</div>
             </div>
             <div id="poster">
             	<img alt="poster snapshot" src="img/poster.jpg" />
