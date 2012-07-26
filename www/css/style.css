@@ -242,6 +242,7 @@ header {
 	font-size:13.5px;
 	word-spacing:3px;
 	margin:0;
+	cursor: pointer; 
 	padding:0;}
 	
 #nav table tr{
