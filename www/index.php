@@ -114,8 +114,8 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
             	<ul>
 					<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
 					<li><a id='annual_ridership' href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
-           		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Weekdays ridership</a></li>
-            		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Weekends ridership</a></li>
+           		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Weekday ridership</a></li>
+            		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Weekend ridership</a></li>
             	</ul>
             </div>
             
@@ -193,12 +193,12 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         	<img src="img/picto_04.png" alt="Most Visited Stations: Weekdays vs Weekends " />
         </div>
         <div class="content">
-        	<h3 class="part_title">Most Visited Stations: Weekdays vs Weekends </h3>
+        	<h3 class="part_title">Most Visited Stations: Weekday vs Weekend </h3>
             <div class="legend">Where do all those 1.6 billion riders go on the weekdays? And where do they go on the weekends? Our data-visualization can tell you:</div>
             <div class="filters">
             	<ul>
-					<li><a class='active' id='filter_weekday_ridership' href="javascript:show_most_vsited_stattions('weekday_ridership')">Weekdays</a></li>
-        			<li><a id='filter_weekend_ridership' href="javascript:show_most_vsited_stattions('weekend_ridership')">Weekends</a></li>
+					<li><a class='active' id='filter_weekday_ridership' href="javascript:show_most_vsited_stattions('weekday_ridership')">Weekday</a></li>
+        			<li><a id='filter_weekend_ridership' href="javascript:show_most_vsited_stattions('weekend_ridership')">Weekend</a></li>
            		 	<li><a class='active' id='filter_MNH' href="javascript:show_most_vsited_stattions('MNH')" style="margin-left:50px;">Manhattan</a></li>
             		<li><a id='filter_BK' href="javascript:show_most_vsited_stattions('BK')">Brooklyn</a></li>
                     <li><a id='filter_QNS' href="javascript:show_most_vsited_stattions('QNS')">Queens</a></li>
@@ -304,7 +304,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
         <div class="content">
         	<div id="about">
         		<h3>About</h3>
-            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at hello@fabernovel.com.</div>
+            	<div class="legend">1.6 Billion Rides is an inquiry into how we can use big, public datasets to get a better picture of the world around us, and make that world work better as a result.  With more data available each year from organizations like the NY MTA, we can use it to better understand and improve the systems that we rely on to make our cities work.  Eventually, with the right access to the right data, we can build new services that go beyond what we can even imagine today, allowing us to all make smarter decisions, as individuals and together as cities.<br />To get in touch with faberNovel to discuss this and other data projects, write us at data@fabernovel.com.</div>
             </div>
             <div id="poster">
             	<img alt="poster snapshot" src="img/poster.jpg" />

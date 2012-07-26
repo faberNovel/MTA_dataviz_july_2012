@@ -428,7 +428,7 @@ window.onload = function () {
 			{"id":3,"x":99,"y":498,"radius":7,"station": "DeKalb Av","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"14272, RIDERS"},
 			{"id":4,"x":107,"y":513,"radius":7,"station": "Atlantic Av","text" : "A massive transit \n station in Brooklyn \nand the Atlantic Mall","nb":"14062, RIDERS"},
 			{"id":5,"x":185,"y":377,"radius":7,"station": "33 St-Rawson St","text" : "Near LaGuardia \nCommunity College","nb":"13573, RIDERS"},
-			{"id":6,"x":357,"y":347,"radius":7,"station": "Flushing-Main St","text" : "Suburbians catch \ntheir first 7th train \nat this station","nb":"13447, RIDERS"},
+			{"id":6,"x":357,"y":347,"radius":7,"station": "Flushing-Main St","text" : "Suburbanites catch \ntheir first 7th train \nat this station","nb":"13447, RIDERS"},
 			{"id":7,"x":99,"y":310,"radius":7,"station": "66 St Lincoln Center","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"13192, RIDERS"},
 			{"id":8,"x":89,"y":435,"radius":7,"station": "Essex St-Delancey St","text" : "The other cool \nplace to hang out \nfor any high-schooler","nb":"13126, RIDERS"},
 			{"id":9,"x":64,"y":387,"radius":7,"station": "8 Av-14 St","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"12792, RIDERS"},
