@@ -242,15 +242,15 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
     // Declare variables
     var map, interaction;
     // Set initial map layer
-    var layer = 'macsym.nyc-sub-30days';
+    var layer = 'macsym.nyc-sub-students';
     // Static part of the map url
-    var urlBase = 'http://api.tiles.mapbox.com/v3/macsym.map-d4kkzffc,';
+    var urlBase = 'http://api.tiles.mapbox.com/v3/macsym.map-ldlax5fl,';
     // Full map url
     var url = urlBase + layer + '.jsonp';
 
     wax.tilejson(url, function(tilejson) {
       // Set minimum zoom limit
-      tilejson.minzoom = 13;
+      tilejson.minzoom = 12;
       // Set maximum zoom limit
       tilejson.maxzoom = 16;
       map = new MM.Map('mymap',
@@ -322,7 +322,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
     </div>
     <div style="clear:both;"></div>
 
-    <p id="copyright">© 2012 - Copyright fabernovel - All Rights Reserved</p>
+    <p id="copyright">© 2012 - <a target='_blank' href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons</a> &nbsp;fabernovel</p>
   </footer>
  <script src="js/plugins.js"></script>
   <script src="js/mta.js"></script>

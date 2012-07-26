@@ -747,6 +747,14 @@ div#part4.part {
 
 }
 
+p#copyright a {
+	color : #76CDD3;
+}
+
+p#copyright a:hover{
+	color:#76CDD3;
+}
+
 a#macsym.nyc-sub-7days {
 	margin-left : 100px;
 }
