@@ -278,8 +278,7 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
       });
     }
   </script>
-  
-        </div>
+  	</div>
         <div style="clear:both;"></div>
     </div>
 
