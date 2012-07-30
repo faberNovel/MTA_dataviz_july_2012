@@ -423,7 +423,7 @@ window.onload = function () {
 		var circles = [
 			{"id":1,"x":84,"y":338,"radius":7,"station": "14 St-Union Square","text" : "The cool place \nto hang out for \nany high-schooler","nb":"20,986 RIDERS"},
 			{"id":2,"x":100,"y":264,"radius":7,"station": "59 St Columbus Circle","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"17,596 RIDERS"},
-			{"id":3,"x":99,"y":438,"radius":7,"station": "DeKalb Av","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"14,272 RIDERS"},
+			{"id":3,"x":99,"y":438,"radius":7,"station": "DeKalb Av","text" : "Brooklyn Technical High School nearby","nb":"14,272 RIDERS"},
 			{"id":4,"x":107,"y":453,"radius":7,"station": "Atlantic Av","text" : "A massive transit \n station in Brooklyn \nand the Atlantic Mall","nb":"14,062 RIDERS"},
 			{"id":5,"x":185,"y":300,"radius":7,"station": "33 St-Rawson St","text" : "Near LaGuardia \nCommunity College","nb":"13573 RIDERS"},
 			{"id":6,"x":357,"y":287,"radius":7,"station": "Flushing-Main St","text" : "Suburbanites catch \ntheir first 7th train \nat this station","nb":"13,447 RIDERS"},
