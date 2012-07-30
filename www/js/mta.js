@@ -423,11 +423,11 @@ window.onload = function () {
 		var circles = [
 			{"id":1,"x":84,"y":338,"radius":7,"station": "14 St-Union Square","text" : "The cool place \nto hang out for \nany high-schooler","nb":"20,986 RIDERS"},
 			{"id":2,"x":100,"y":264,"radius":7,"station": "59 St Columbus Circle","text" : "Martin Luther King Jr. \nHigh School is a huge \nmagnet school nearby","nb":"17,596 RIDERS"},
-			{"id":3,"x":99,"y":438,"radius":7,"station": "DeKalb Av","text" : "The specialized Brooklyn \nTechnical High School \ndraws students from around the city","nb":"14,272 RIDERS"},
+			{"id":3,"x":99,"y":438,"radius":7,"station": "DeKalb Av","text" : "The Brooklyn Technical\n High School draws\n students from around the city","nb":"14,272 RIDERS"},
 			{"id":4,"x":107,"y":453,"radius":7,"station": "Atlantic Av","text" : "A massive transit \n station in Brooklyn \nand the Atlantic Mall","nb":"14,062 RIDERS"},
 			{"id":5,"x":185,"y":300,"radius":7,"station": "33 St-Rawson St","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"13,573 RIDERS"},
 			{"id":6,"x":357,"y":287,"radius":7,"station": "Flushing-Main St","text" : "Suburbanites catch \ntheir first 7th train \nat this station","nb":"13,447 RIDERS"},
-			{"id":7,"x":99,"y":250,"radius":7,"station": "66 St Lincoln Center","text" : "LaGuardia High School of Music & Art\n and Performing Arts attracts \nstudents looking for FAME!","nb":"13,192 RIDERS"},
+			{"id":7,"x":99,"y":250,"radius":7,"station": "66 St Lincoln Center","text" : "LaGuardia High School \nof Music & Art and \nPerforming Arts nearby","nb":"13,192 RIDERS"},
 			{"id":8,"x":89,"y":365,"radius":7,"station": "Essex St-Delancey St","text" : "The other cool \nplace to hang out \nfor any high-schooler","nb":"13,126 RIDERS"},
 			{"id":9,"x":64,"y":327,"radius":7,"station": "8 Av-14 St","text" : "Why is this station so \npopular with students?\nSend us your theories.","nb":"12,792 RIDERS"},
 			{"id":10,"x":90,"y":430,"radius":7,"station": "Jay St MetroTech","text" : "Fulton Street Mall \nnearby with its \ndiscount stores","nb":"11,719 RIDERS"}
