@@ -233,7 +233,7 @@ function display_graph1(nb1) {
 	
 	var circle1  = paper1.circle(5,5, circle_radius);
 	if (current_bo == 'MNH') {
-		circle1.attr("fill", "#1A263D");
+		circle1.attr("fill", "#1A263D");c
 	}
 	else {
 		circle1.attr("fill", "#76CDD3");
