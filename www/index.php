@@ -116,8 +116,8 @@ if (isset($_GET['station']) && (!empty($_GET['station']))) {
             	<ul>
 					<li><a id='number_of_stations' href="javascript:get_data('number_of_stations')">Number of Stations</a></li>
 					<li><a id='annual_ridership' href="javascript:get_data('annual_ridership')">Annual ridership</a></li>
-           		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Weekday ridership</a></li>
-            		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Weekend ridership</a></li>
+           		 	<li><a id='weekdays_ridership' href="javascript:get_data('weekdays_ridership')">Boroughs' population</a></li>
+            		<li><a id='weekend_ridership' href="javascript:get_data('weekend_ridership')">Boroughs'land area</a></li>
             	</ul>
             </div>
             
