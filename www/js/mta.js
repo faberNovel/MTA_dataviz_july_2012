@@ -413,6 +413,7 @@ function get_data(s) {
 		display_graph2(nb2);
 		display_graph3(nb3);
 		display_graph4(nb4);
+		
 		if (s == 'annual_ridership') {
 			nb1 = nb1.toFixed(1) + '%';
 			nb2 = nb2.toFixed(1) + '%';
@@ -420,21 +421,20 @@ function get_data(s) {
 			nb4 = nb4.toFixed(1) + '%';
 			$('#text_part4').css('margin-left','90px');
 		}
-		
 		if (s == 'weekdays_ridership') {
-				nb1 = nb1.toFixed(1) + ' millions';
-				nb2 = nb2.toFixed(1) + ' millions';
-				nb3 = nb3.toFixed(1) + ' millions';
-				nb4 = nb4.toFixed(1) + ' millions';
+				nb1 = '1.6 millions';
+				nb2 = '2.5 millions';
+				nb3 = '2.2 millions';
+				nb4 = '1.4 millions';
 				$('#text_part4').css('margin-left','65px');
 		}
-			if (s == 'weekend_ridership') {
-					nb1 = nb1.toFixed(1) + ' sq mi';
-					nb2 = nb2.toFixed(1) + ' sq mi';
-					nb3 = nb3.toFixed(1) + ' sq mi';
-					nb4 = nb4.toFixed(1) + ' sq mi';
-					$('#text_part4').css('margin-left','75px');
-			}
+		if (s == 'weekend_ridership') {
+				nb1 = nb1.toFixed(1) + ' sq mi';
+				nb2 = nb2.toFixed(1) + ' sq mi';
+				nb3 = nb3.toFixed(1) + ' sq mi';
+				nb4 = nb4.toFixed(1) + ' sq mi';
+				$('#text_part4').css('margin-left','75px');
+		}
 		$('#nb_text_part1').html(nb1);
 		$('#nb_text_part2').html(nb2);
 		$('#nb_text_part3').html(nb3);
