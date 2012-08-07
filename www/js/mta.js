@@ -422,10 +422,10 @@ function get_data(s) {
 			$('#text_part4').css('margin-left','90px');
 		}
 		if (s == 'weekdays_ridership') {
-				nb1 = '1.6 millions';
-				nb2 = '2.5 millions';
-				nb3 = '2.2 millions';
-				nb4 = '1.4 millions';
+				nb1 = '1.6 million';
+				nb2 = '2.5 million';
+				nb3 = '2.2 million';
+				nb4 = '1.4 million';
 				$('#text_part4').css('margin-left','65px');
 		}
 		if (s == 'weekend_ridership') {
